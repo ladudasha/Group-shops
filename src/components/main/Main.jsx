@@ -6,6 +6,7 @@ import img4 from "./../../assets/images/products/img4.png";
 import img5 from "./../../assets/images/products/img5.png";
 import img6 from "./../../assets/images/products/img6.png";
 import Products from "./../products/Products";
+import News from "./news/News";
 
 
 
@@ -48,6 +49,7 @@ function Main(props) {
     return ( 
         <div className={s.main}>
 
+        <News/>
         {/* <News/>  Baner+CardStock
         <search/> Buttons+input/button  */}
         
