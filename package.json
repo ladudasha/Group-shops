@@ -43,11 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
   },
   "files.associations": {
     "*.js": "javascriptreact"
-=======
->>>>>>> 07c25c23088039c83b2db307ee4c709e096aa1a4
   }
 }
