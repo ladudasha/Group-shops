@@ -48,12 +48,15 @@ function Main(props) {
     return ( 
         <div className={s.main}>
 
-        {/* <News/>  Baner+CardStock
-        <search/> Buttons+input/button  */}
+        {/* </MainInfo>  Baner+CardStock
+        <search/> FilterButtons+input/button  */}
         
         <Products data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
 
-        {/* <ProductsItemBlock/> SectionTitle+Navigation+SliderProducts(ItemProduct) */}
+
+        {/* <ProductCard/> */}
+
+        {/* <ProductsItemsBlock/> {SectionTitle+Navigation}+SliderProducts>ProductCard*/}
         {/* <SectionSale/> */}
 
         </div>

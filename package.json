@@ -11,9 +11,9 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "swiper": "^7.0.8",
     "web-vitals": "^1.0.1"
   },
-    
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -38,9 +38,7 @@
       "last 1 safari version"
     ]
   },
-  
   "files.associations": {
     "*.js": "javascriptreact"
   }
-  
 }
