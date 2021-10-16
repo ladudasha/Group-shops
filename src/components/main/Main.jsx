@@ -55,7 +55,7 @@ function Main(props) {
         {/* <News/>  Baner+CardStock
         <search/> Buttons+input/button  */}
         
-        <Products data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
+        <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
 
 
         {/* <ProductCard/> */}

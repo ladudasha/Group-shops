@@ -1,11 +1,16 @@
 @import "./../../style/sass/vars.scss";
+// .container {
+//     border: 1px solid rgb(15, 207, 191);
+//     max-width: 1140px;
+//     width: 100%;
+//     margin: 0 auto;
+// }
 .sectionProduct {
     border: 1px solid goldenrod;
-    width: 400px;
+    max-width: 370px;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin: 10px;
 }
 
 h1 {

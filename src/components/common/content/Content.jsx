@@ -13,7 +13,7 @@ function Content(props) {
 
     return ( 
         <div>
-            <Main />
+            <Main/>
             <Catalog/>
             <ProductCard/>
         </div>

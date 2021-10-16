@@ -11,10 +11,12 @@ function ProductCard(props) {
         // link: "001",
     }
     return ( 
-        <div className={s.productCard}>
-            <img src={data.img} alt="" />
-            <p></p>
-            <span></span>
+        <div className={s.container}>
+            <div className={s.productCard}>
+                <img src={data.img} alt="" />
+                <p></p>
+                <span></span>
+            </div>
         </div>
     );
 }
