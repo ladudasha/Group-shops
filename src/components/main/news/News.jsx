@@ -9,7 +9,7 @@ function News(props) {
             <div className={s.newsWrap}>
                 <div className={s.newsSlider}>Слайдер</div>
                 <div className={s.cardStock}> 
-                    <h2>Лодочный мотор Suzuki DF9.9BRS</h2>
+                    <h2>Лодочный мотор Suzuki DF9.9BRS 12345</h2>
                 </div>
             </div>
         </div>
