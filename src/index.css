@@ -16,3 +16,48 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: local('ProximaNovaBold'), url(./fonts/ProximaNova/ProximaNova-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: local('ProximaNovaSemibold'), url(./fonts/ProximaNova/ProximaNova-Semibold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'BarlowBold';
+    src: local('BarlowBold'), url(./fonts/Barlow/Barlow-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'BarlowRegular';
+    src: local('BarlowRegular'), url(./fonts/Barlow/Barlow-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'BarlowSemiBold';
+    src: local('BarlowSemiBold'), url(./fonts/Barlow/Barlow-SemiBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplayRegular';
+    src: local('SFProDisplayRegular'), url(./fonts/SFProDisplay/SFProDisplay-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplayBold';
+    src: local('SFProDisplayBold'), url(./fonts/SFProDisplay/SFProDisplay-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplayMedium';
+    src: local('SFProDisplayMedium'), url(./fonts/SFProDisplay/SFProDisplay-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplaySemibold';
+    src: local('SFProDisplaySemibold'), url(./fonts/SFProDisplay/SFProDisplay-Semibold.woff) format('woff');
+}

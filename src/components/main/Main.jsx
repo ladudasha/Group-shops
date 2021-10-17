@@ -6,7 +6,7 @@ import img4 from "./../../assets/images/products/img4.png";
 import img5 from "./../../assets/images/products/img5.png";
 import img6 from "./../../assets/images/products/img6.png";
 import Products from "./../products/Products";
-import News from "./news/News";
+import MainInfo from "./main info/MainInfo";
 
 
 
@@ -51,9 +51,7 @@ function Main(props) {
 
         {/* </MainInfo>  Baner+CardStock
         <search/> FilterButtons+input/button  */}
-        <News/>
-        {/* <News/>  Baner+CardStock
-        <search/> Buttons+input/button  */}
+        <MainInfo/>
         
         <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
 
