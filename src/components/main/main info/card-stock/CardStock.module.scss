@@ -1,4 +1,4 @@
-.cardStock{
+.cardStock {
     max-width: 264px;
     height: 397px;
     overflow: hidden;
@@ -13,30 +13,33 @@
     flex-direction: column;
     flex: 1 1 auto;
 }
-.stockTop{
+
+.stockTop {
     display: flex;
     justify-content: space-between;
     margin-bottom: 7px;
 }
-.stockName{
+
+.stockName {
     font-family: ProximaNovaBold, serif;
     color: #fff;
     font-size: 12px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 1.5px;
     background-color: #1C62CD;
     padding: 8px 20px;
 }
-.newPrace{
+
+.newPrace {
     font-family: BarlowBold, serif;
     color: #1C62CD;
     font-size: 27px;
     line-height: 32px;
-    text-align:right;
+    text-align: right;
     padding-right: 27px;
 }
 
-.oldPrace{
+.oldPrace {
     font-family: BarlowRegular, serif;
     color: #C4C4C4;
     font-size: 14px;
@@ -44,31 +47,34 @@
     text-align: right;
     padding-right: 15px;
 }
-.stockWrapImg{
+
+.stockWrapImg {
     display: flex;
     justify-content: center;
     height: 177px;
     max-width: 125px;
     margin: 0 auto;
 }
-.SaleImg{
+
+.SaleImg {
     width: 100%;
 }
 
-.stockTitle{
+.stockTitle {
     display: block;
     max-width: 155px;
     font-family: SFProDisplayBold, serif;
     font-size: 18px;
-    color:#2F3035;
+    color: #2F3035;
     margin: 0 auto 7px;
 }
-.stockBottom{
+
+.stockBottom {
     background-color: #F0F0F4;
     overflow: hidden;
 }
 
-.stockTextInfo{
+.stockTextInfo {
     font-family: SFProDisplayRegular, serif;
     font-size: 18px;
     color: #2F3035;
@@ -76,12 +82,12 @@
     padding-top: 26px;
 }
 
-.stockDate{
+.stockDate {
     display: block;
     font-family: BarlowBold, serif;
     color: #1C62CD;
     font-size: 18px;
     line-height: 100%;
-    text-align:center;
+    text-align: center;
     margin-bottom: 25px;
 }

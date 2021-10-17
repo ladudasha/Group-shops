@@ -7,6 +7,7 @@ import img5 from "./../../assets/images/products/img5.png";
 import img6 from "./../../assets/images/products/img6.png";
 import Products from "./../products/Products";
 import MainInfo from "./main info/MainInfo";
+import ProductsItemsBlock from "../Products-Items-Block/ProductsItemsBlock";
 
 
 
@@ -56,7 +57,7 @@ function Main(props) {
         <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
 
 
-        {/* <ProductCard/> */}
+        <ProductsItemsBlock/>
 
         {/* <ProductsItemsBlock/> {SectionTitle+Navigation}+SliderProducts>ProductCard*/}
         {/* <SectionSale/> */}

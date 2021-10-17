@@ -1,6 +1,8 @@
 @import "./../../style/sass/vars.scss";
 .sectionProduct {
-    border: 1px solid goldenrod;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
     max-width: 370px;
     display: flex;
     justify-content: space-between;

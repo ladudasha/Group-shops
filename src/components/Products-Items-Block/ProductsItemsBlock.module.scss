@@ -1,0 +1,70 @@
+    .container {
+        border: 1px solid rgb(15, 207, 191);
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .productsItemsBlock {
+        padding-top: 80px;
+        padding-bottom: 34px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+    }
+    
+    .ItemsBlockTop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+    
+    .SectionTitle {
+        margin-bottom: 25px;
+        color: #2F3035;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    .Navigation {
+        width: 666px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .productsItemsBtn {
+        color: #2F3035;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        font-family: SFProDisplayMedium;
+        padding-bottom: 10px;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    .sectionBtn {
+        width: 252px;
+        height: 50px;
+        color: #2F3035;
+        border: none;
+        background: #F0F0F4;
+        font-family: SFProDisplaySemibold;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-top: 35px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
