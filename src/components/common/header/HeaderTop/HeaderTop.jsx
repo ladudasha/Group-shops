@@ -7,7 +7,7 @@ import basket from "./../../../../assets/images/mainImages/Header/basket.svg";
 
 
 
-function HeaderTop(props) {
+function HeaderTop() {
     return ( 
         <div className={s.headerTop}>
             <div className={s.navigationWrapper}>
