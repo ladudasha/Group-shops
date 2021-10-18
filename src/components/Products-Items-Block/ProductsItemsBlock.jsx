@@ -2,6 +2,10 @@
 import SwiperSlider from "../swiper/SwiperSlider";
 import s from "./ProductsItemsBlock.module.scss";
 import img1 from "./../../assets/images/ProductsCard/img1.png";
+import img2 from "./../../assets/images/ProductsCard/img2.png";
+import img3 from "./../../assets/images/ProductsCard/img3.png";
+import img4 from "./../../assets/images/ProductsCard/img4.png";
+
 
 
 
@@ -34,6 +38,22 @@ const data7 = {
     img: img1,
     cash: "9 800 ₽",
 }
+const data8 = {
+    title: "Спасательный жилет BRP Men's Airflow PFD",
+    img: img2,
+    cash: "6 900 ₽",
+}
+const data9 = {
+    title: "BRP Audio-Premium System",
+    img: img3,
+    cash: "68 000 ₽",
+}
+const data10 = {
+    title: "Спасательное снаряжение",
+    img: img4,
+    cash: "9 800 ₽",
+}
+
 
     return ( 
         <div className={s.container}>
@@ -50,7 +70,7 @@ const data7 = {
                     </div>
                 </div>
                 <div className={s.SliderProducts}>
-                    <SwiperSlider data={data7}/>
+                    <SwiperSlider data={data7} data2={data8} data3={data9} data4={data10}/>
                 </div>
                 <button className={s.sectionBtn}>Показать еще</button>
             </section>
