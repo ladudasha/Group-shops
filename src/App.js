@@ -51,7 +51,7 @@ function App() {
 
     return (
         <BrowserRouter>
-            <div>
+            <div className="products">
         
                 <SectionProduct title={data.title} img={data.img} link={data.link}/>
                 <SectionProduct title={data2.title} img={data2.img} link={data2.link}/>
