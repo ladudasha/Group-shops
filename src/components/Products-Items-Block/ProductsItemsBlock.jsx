@@ -1,6 +1,7 @@
 
 import SwiperSlider from "../swiper/SwiperSlider";
 import s from "./ProductsItemsBlock.module.scss";
+import img1 from "./../../assets/images/ProductsCard/img1.png";
 
 
 
@@ -28,6 +29,12 @@ const data6 = {
     btn: "аксессуары"
 }
 
+const data7 = {
+    title: "Водонепроницаемый Рюкзак",
+    img: img1,
+    cash: "9 800 ₽",
+}
+
     return ( 
         <div className={s.container}>
             <section className={s.productsItemsBlock}>
@@ -43,7 +50,7 @@ const data6 = {
                     </div>
                 </div>
                 <div className={s.SliderProducts}>
-                    <SwiperSlider/>
+                    <SwiperSlider data={data7}/>
                 </div>
                 <button className={s.sectionBtn}>Показать еще</button>
             </section>

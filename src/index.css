@@ -21,6 +21,7 @@ code {
 @font-face {
     font-family: 'ProximaNovaBold';
     src: local('ProximaNovaBold'), url(./fonts/ProximaNova/ProximaNova-Bold.woff) format('woff');
+    font-display: swap;
 }
 
 @font-face {

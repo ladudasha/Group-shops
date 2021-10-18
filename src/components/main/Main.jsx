@@ -50,17 +50,14 @@ function Main(props) {
     return ( 
         <div className={s.main}>
 
-        {/* </MainInfo>  Baner+CardStock
-        <search/> FilterButtons+input/button  */}
-        <MainInfo/>
+            <MainInfo/>
         
-        <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
+            <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
 
+            <ProductsItemsBlock/>
 
-        <ProductsItemsBlock/>
-
-        {/* <ProductsItemsBlock/> {SectionTitle+Navigation}+SliderProducts>ProductCard*/}
-        {/* <SectionSale/> */}
+            {/* <ProductsItemsBlock/> {SectionTitle+Navigation}+SliderProducts>ProductCard*/}
+            {/* <SectionSale/> */}
 
         </div>
     );

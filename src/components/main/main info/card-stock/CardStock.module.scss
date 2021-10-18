@@ -32,7 +32,8 @@
 }
 
 .newPrace {
-    font-family: BarlowBold, serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
     color: #1C62CD;
     font-size: 27px;
     line-height: 32px;
@@ -49,7 +50,8 @@
 }
 
 .oldPrace {
-    font-family: BarlowRegular, serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
     color: $textLight;
     font-size: 14px;
     line-height: 100%;
@@ -118,7 +120,8 @@
 
 .stockDate {
     display: block;
-    font-family: BarlowBold, serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
     color: #1C62CD;
     font-size: 18px;
     line-height: 100%;
