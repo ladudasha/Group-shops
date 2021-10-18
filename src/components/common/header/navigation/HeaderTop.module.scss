@@ -1,0 +1,60 @@
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+    text-decoration: none;
+    color:#2F3035;
+}
+
+.headerTop{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 122px;
+}
+.navigation{
+    display: flex;
+    width: 454px;
+    justify-content: space-between;
+}
+
+.navigationItem{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color:#2F3035;
+}
+
+.addressWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.address{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color:#2F3035;
+}
+
+.icons{
+    width: 98px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon3{
+    position: relative;
+}
+.icon3::after{
+    content:"";
+    position: absolute;
+    background: url(./../../../../assets/images/mainImages/Header/basketPseudo.png);
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+}
