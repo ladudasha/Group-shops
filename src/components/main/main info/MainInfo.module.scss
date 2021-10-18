@@ -1,0 +1,27 @@
+@import './../../../style/sass/vars.scss';
+
+.container{
+    // border: 1px solid red;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.MainInfoWrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsSlider{
+    min-width: 870px;
+    border: 1px solid;
+    height: 400px;
+}
+
+.cardStock{
+    min-width: 265px;
+    border: 1px solid $borderColor;
+    height: 400px;
+
+}
