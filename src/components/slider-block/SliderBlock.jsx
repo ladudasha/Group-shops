@@ -1,5 +1,6 @@
+import s from "./SliderBlock.scss";
 // import img1 from "./../../assets/images/ProductsCard/img1.png";
-import ProductCard from "./../product-card/ProductCard";
+import ProductCard from "../product-card/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
@@ -18,7 +19,7 @@ import SwiperCore, {
 
 
 
-export default function SwiperSlider(props) {
+export default function SliderBlock(props) {
 
 //   const data = {
 //     title: "Водонепроницаемый Рюкзак",
@@ -28,9 +29,7 @@ export default function SwiperSlider(props) {
   
     return (
       <>
-<Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} pagination={{
-  "clickable": true
-}} navigation={true} className="mySwiper">
+<Swiper slidesPerView={4} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} navigation={true} className={s.mySwiper}>
 
   <SwiperSlide><ProductCard title={props.data.title} img ={props.data.img} cash={props.data.cash}/></SwiperSlide>
 
@@ -38,7 +37,7 @@ export default function SwiperSlider(props) {
 
   <SwiperSlide><ProductCard title={props.data3.title} img ={props.data3.img} cash={props.data3.cash}/></SwiperSlide>
 
-  <SwiperSlide><ProductCard title={props.data4.title} img ={props.data4.img} cash={props.data4.cash}/></SwiperSlide>
+  <SwiperSlide><ProductCard title={props.data4.title} img ={props.data4.img} text={props.data4.text} link={props.data4.link}/></SwiperSlide>
 
   <SwiperSlide><ProductCard title={props.data.title} img ={props.data.img} cash={props.data.cash}/></SwiperSlide>
 

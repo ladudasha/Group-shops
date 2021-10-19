@@ -16,6 +16,9 @@ function ProductCard(props) {
                 <img className={s.productCardImg} src={props.img} alt=""/>
                 <h3 className={s.productCardTitle}>{props.title}</h3>
                 <span className={s.productCardCash}>{props.cash}</span>
+                <p className={s.productCardText}>{props.text}</p>
+                <a href="">{props.link}</a>
+
             </div>
         </div>
     );

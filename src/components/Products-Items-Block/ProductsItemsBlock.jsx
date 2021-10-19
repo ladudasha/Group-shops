@@ -1,10 +1,9 @@
-
-import SwiperSlider from "../swiper/SwiperSlider";
 import s from "./ProductsItemsBlock.module.scss";
 import img1 from "./../../assets/images/ProductsCard/img1.png";
 import img2 from "./../../assets/images/ProductsCard/img2.png";
 import img3 from "./../../assets/images/ProductsCard/img3.png";
 import img4 from "./../../assets/images/ProductsCard/img4.png";
+import SliderBlock from "../slider-block/SliderBlock";
 
 
 
@@ -48,10 +47,14 @@ const data9 = {
     img: img3,
     cash: "68 000 ₽",
 }
-const data10 = {
+const dataNo = {
     title: "Спасательное снаряжение",
     img: img4,
-    cash: "9 800 ₽",
+   
+    text: "нет в наличии",
+    link: "Сообщить о поступлении"
+    
+
 }
 
 
@@ -70,7 +73,7 @@ const data10 = {
                     </div>
                 </div>
                 <div className={s.SliderProducts}>
-                    <SwiperSlider data={data7} data2={data8} data3={data9} data4={data10}/>
+                    <SliderBlock data={data7} data2={data8} data3={data9} data4={dataNo}/>
                 </div>
                 <button className={s.sectionBtn}>Показать еще</button>
             </section>
