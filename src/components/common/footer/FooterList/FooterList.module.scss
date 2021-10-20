@@ -1,0 +1,28 @@
+.FooterList{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F3035;
+    margin-bottom: 5px;
+}
+.item{
+    font-style: normal;
+    font-weight:500;
+    font-size: 14px;
+    color: #2F3035;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.bottom{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #48494D;
+    margin-top: 40px;
+}
