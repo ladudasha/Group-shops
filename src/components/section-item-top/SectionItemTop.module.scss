@@ -1,0 +1,37 @@
+.sectionItemTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.sectionTitle {
+    margin-bottom: 25px;
+    color: #2F3035;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.navigation {
+    width: 666px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsItemsBtn {
+    color: #2F3035;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    font-family: SFProDisplayMedium;
+    padding-bottom: 10px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}

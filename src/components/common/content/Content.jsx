@@ -1,7 +1,7 @@
 import s from "./Content.module.scss";
 import Main from "./../../main/Main";
 import Catalog from "./../../catalog/Catalog";
-import ProductCard from "./../../product-card/ProductCard";
+// import ProductDescription from "./../../product-card/ProductDescription";
 
 
 
@@ -13,7 +13,7 @@ function Content(props) {
         <div>
             <Main/>
             <Catalog/>
-            <ProductCard/>
+            {/* <ProductDescription/> */}
         </div>
     );
 }
