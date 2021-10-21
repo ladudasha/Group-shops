@@ -1,26 +1,30 @@
 import s from "./ProductCard.module.scss";
-// import img1 from "./../../assets/images/ProductsCard/img1.png";
+import basket from "./../../assets/images/ProductsCard/Vector.svg"
+
 
 
 
 function ProductCard(props) {
 
-    // const data = {
-    //     title: "Водонепроницаемый Рюкзак",
-    //     img: img1,
-    //     cash: "9 800 ₽",
-    // }
-    return ( 
-        <div className={s.container}>
-            <div className={s.productCard}>
-                <img className={s.productCardImg} src={props.img} alt=""/>
-                <h3 className={s.productCardTitle}>{props.title}</h3>
-                <span className={s.productCardCash}>{props.cash}</span>
-                <p className={s.productCardText}>{props.text}</p>
-                <a href="">{props.link}</a>
 
+    return (     
+        <div className={s.productCard}>
+            <span className={s.label}>SALE</span>
+            <input className={s.cardLike} type="checkbox"/>
+            <a  className={s.BtnLink} href="">посмотреть товар</a>
+            <img className={s.productCardImg} src={props.img} alt=""/>
+            <h3 className={s.productCardTitle}>{props.title}</h3>
+            <div className={s.isShow}>
+                <span className={s.productCardCash}>{props.cash}</span>
+                <button className={s.buyBtn}>
+                    <img src={basket} alt=""/>
+                </button>
             </div>
-        </div>
+            <div className={s.isHidden}>
+                <p className={s.productCardText}>{props.text}</p>
+                <a href="">{props.link}</a>            
+            </div>         
+        </div>    
     );
 }
 
