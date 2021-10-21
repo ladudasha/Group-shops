@@ -8,6 +8,8 @@ import img6 from "./../../assets/images/products/img6.png";
 import Products from "./../products/Products";
 import MainInfo from "./main info/MainInfo";
 import ProductsItemsBlock from "../Products-Items-Block/ProductsItemsBlock";
+import SearchBlock from './search block/SearchBlock';
+
 
 
 
@@ -47,11 +49,25 @@ function Main(props) {
         img: img6,
         link: "006"
     }
+
+    const databtn1 = {
+        label: "Поиск по  номеру"
+    }
+
+    const databtn2 = {
+        label: "Поиск по марке"
+    }
+
+    const databtn3 = {
+        label: "Поиск по названию товара"
+    }
+
     return ( 
         <div className={s.main}>
 
             <MainInfo/>
-        
+            <SearchBlock label={databtn1.label}/>
+
             <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
 
             <ProductsItemsBlock/>
