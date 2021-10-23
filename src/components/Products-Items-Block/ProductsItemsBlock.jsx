@@ -3,7 +3,6 @@ import img1 from "./../../assets/images/ProductsCard/img1.png";
 import img2 from "./../../assets/images/ProductsCard/img2.png";
 import img3 from "./../../assets/images/ProductsCard/img3.png";
 import img4 from "./../../assets/images/ProductsCard/img4.png";
-import img5 from "./../../assets/images/ProductsCard/Vector.svg";
 import SliderBlock from "../slider-block/SliderBlock";
 import SectionItemTop from "../section-item-top/SectionItemTop";
 

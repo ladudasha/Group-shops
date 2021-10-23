@@ -15,7 +15,11 @@ function ProductCard(props) {
 
     return (     
         <div className={s.productCard}>
-            <Checkbox className={s.productLike} icon={<FavoriteBorder />} checkedIcon={<Favorite />}/>
+            <div className={s.productLike}>
+            <Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />}/>
+
+            </div>
+           
             
           
             <span className={s.label}>SALE</span>
