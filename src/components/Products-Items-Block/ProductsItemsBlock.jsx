@@ -18,12 +18,14 @@ const cardData = {
     title: "Водонепроницаемый Рюкзак",
     img: img1,
     cash: "9 800 ₽",
-
-}
+   
+    
+}              
 const cardData2 = {
     title: "Спасательный жилет BRP Men's Airflow PFD",
     img: img2,
     cash: "6 900 ₽",
+  
 
 }
 const cardData3 = {
@@ -31,11 +33,13 @@ const cardData3 = {
     img: img3,
     cash: "68 000 ₽",
     
+    
 }
 const cardData4 = {
     title: "Спасательное снаряжение",
     img: img4,  
     cash: "8 000 ₽",
+    
 
 
 }
