@@ -1,4 +1,4 @@
-import s from "./SliderBlock.scss";
+import s from "./SliderBlock.module.scss";
 import ProductCard from "../product-card/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'
