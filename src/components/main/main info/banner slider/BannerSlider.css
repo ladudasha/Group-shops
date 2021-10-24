@@ -1,0 +1,53 @@
+.bannerSlider .swiper-container{
+  max-width: 870px;
+  width: 100%;
+  position: relative;
+
+}
+
+.bannerSlider .swiper-button-prev::after {
+  content:"" !important;
+  display: block;
+  width: 15px;
+  height: 28px;
+  background-image: url("/src/assets/images/mainImages/rowRight.svg");
+  background-size: contain;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+.bannerSlider .swiper-button-next::after {
+  content:"" !important;
+  display: block;
+  background-image: url(./../../../../assets/images/mainImages/rowRight.svg); 
+  background-size: contain;
+  width: 15px;
+  height: 28px;
+  background-repeat: no-repeat;
+  position:absolute;
+  top: -10px;
+  right: 10px;
+}
+
+
+.bannerSlider .swiper-container-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 62px;
+}
+.bannerSlider .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  width: 11px;
+  height: 11px;
+  border: 1px solid #fff;
+  /* background-color:transparent; */
+  margin-right: 9px;
+  border-radius: 50%;
+}
+
+.bannerSlider .swiper-pagination-bullet-active{
+  background-color: #fff;
+}
+
+
+
