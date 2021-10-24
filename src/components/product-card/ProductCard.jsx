@@ -10,8 +10,6 @@ import Favorite from '@mui/icons-material/Favorite';
 
 
 function ProductCard(props) {
-   
-
 
     return (     
         <div className={s.productCard}>
