@@ -1,0 +1,31 @@
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(167, 224, 167);
+}
+
+.catalogContent{
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    border: 1px solid pink;
+    grid-template-areas:
+    'title title'
+    'sidebar catalog'
+    'pagination pagination';
+
+}
+
+.catalogTitleBlock{
+    grid-area: title;
+}
+.filterProductsBlock{
+    grid-area: sidebar;
+}
+.catalogCards{
+    grid-area: catalog;
+}
+.paginationPages{
+    grid-area: pagination;
+}
