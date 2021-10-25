@@ -6,22 +6,22 @@ function CardStock(props) {
 
 
     return ( 
-        <section className={s.cardStock}>
+        <article className={s.cardStock}>
                 <div className={s.stockTop}>
                     <span className={s.stockName}>акция</span>
                     <span className={s.newPrace}>{props.newPrace}</span>
                 </div>
                 <div className={s.oldPrace}>{props.oldPrace}</div>
                 <div className={s.stockWrapImg}>
-                    {/* <img className={s.stockImg} src={props.stockImg} alt="" /> */}
+                    <img className={s.stockImg} src={props.img} alt="" />
                 </div>
-                <h2 className={s.stockTitle}>{props.stockTitle}</h2>
+                <h2 className={s.stockTitle}>{props.title}</h2>
                 <div className={s.stockBottom}>
                     <p className={s.stockTextInfo}>Акция действует до</p>
-                    <p className={s.stockDate}>{props.stockDate}</p>
+                    <p className={s.stockDate}>{props.date}</p>
                 </div>
             
-        </section>
+        </article>
 
         
     );

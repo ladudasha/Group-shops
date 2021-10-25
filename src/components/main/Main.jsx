@@ -13,6 +13,9 @@ import img44 from "./../../assets/images/ProductsCard/img4.png";
 
 import Products from "./../products/Products";
 import MainInfo from "./main info/MainInfo";
+
+import imgStock from "./../../assets/images/mainImages/mainInfo/motorStock.png";
+
 import ProductsItemsBlock from "../Products-Items-Block/ProductsItemsBlock";
 import SearchBlock from './search block/SearchBlock';
 
@@ -63,6 +66,13 @@ function Main(props) {
         link: "006"
     }
 
+    const stockdata = {
+        newPrace: "190 000",
+        oldPrace: "225 000",
+        img: imgStock,
+        title: "Лодочный мотор Suzuki DF9.9BRS",
+        date: "31.08.2020"
+    }
 
     const databtn1 = {
         label: "Поиск по  номеру"
@@ -132,7 +142,7 @@ function Main(props) {
     return ( 
         <div className={s.main}>
 
-            <MainInfo/>
+            <MainInfo data={stockdata}/>
             <SearchBlock label1={databtn1.label} label2={databtn2.label} label3={databtn3.label}/>
             <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
             <ProductsItemsBlock cardData={popularProductsCardData}/>
