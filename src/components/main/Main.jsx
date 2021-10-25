@@ -10,18 +10,13 @@ import img11 from "./../../assets/images/ProductsCard/img1.png";
 import img22 from "./../../assets/images/ProductsCard/img2.png";
 import img33 from "./../../assets/images/ProductsCard/img3.png";
 import img44 from "./../../assets/images/ProductsCard/img4.png";
-
 import Products from "./../products/Products";
 import MainInfo from "./main info/MainInfo";
-
 import imgStock from "./../../assets/images/mainImages/mainInfo/motorStock.png";
-
 import ProductsItemsBlock from "../Products-Items-Block/ProductsItemsBlock";
 import SearchBlock from './search block/SearchBlock';
-
 import SectionSale from "./section-sale/SectionSale";
-
-import img111 from "./../../assets/images/WithProducts/img1.png";
+import img111 from "./../../assets/images/WithProducts/magnitofon.png";
 import img222 from "./../../assets/images/WithProducts/img2.png";
 import img333 from "./../../assets/images/WithProducts/img3.png";
 import img444 from "./../../assets/images/WithProducts/img4.png";
@@ -117,7 +112,7 @@ function Main(props) {
         cardData1: {
             title: "BRP Audio-портативная система",
             img: img111,  
-            cash: "50000 ₽",
+            cash: "50 000 ₽",
         },
         cardData2: {
             title: "Garmin Echomap Plus 62cv",
@@ -127,7 +122,7 @@ function Main(props) {
         cardData3: {
             title: "RF D.E.S.S.TM Key",
             img: img333,  
-            cash: "30000 ₽",
+            cash: "30 000 ₽",
         },
         cardData4: {
             title: "Мужской костюм 3мм",

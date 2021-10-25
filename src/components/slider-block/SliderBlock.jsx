@@ -16,9 +16,9 @@ export default function SliderBlock(props) {
 console.log(props)
   
     return (
-      <div className={s.sliderBlockShell}>
 
-<Swiper slidesPerView={4} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} navigation={true} className={s.mySwiper}>
+      <div className="sliderBlock">
+<Swiper slidesPerView={4} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} navigation={true} className="mySwiper">
 
   <SwiperSlide><ProductCard title={props.cardData.cardData1.title} img={props.cardData.cardData1.img} cash={props.cardData.cardData1.cash} /></SwiperSlide>
 

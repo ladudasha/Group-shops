@@ -11,7 +11,10 @@ function SectionProduct(props) {
                     <h1>{props.title}</h1>
                     <NavLink className={s.textLight} to={props.link}>Подробнее</NavLink> 
                 </div>
-                <img src={props.img} alt="" />
+                <div className={s.imgWrap}>
+                    <img src={props.img} alt="" />
+                </div>
+               
             </article>
 
         

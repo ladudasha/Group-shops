@@ -16,3 +16,9 @@ h1 {
 .textLight {
     color: $textLight;
 }
+
+.imgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
