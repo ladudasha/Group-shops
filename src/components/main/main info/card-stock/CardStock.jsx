@@ -1,5 +1,5 @@
 import s from './CardStock.module.scss';
-import StockImg from './../../../../assets/images/mainImages/motorStock.png';
+// import StockImg from './../../../../assets/images/mainImages/mainInfo/motorStock.png';
 
 function CardStock(props) {
     
@@ -9,16 +9,16 @@ function CardStock(props) {
         <section className={s.cardStock}>
                 <div className={s.stockTop}>
                     <span className={s.stockName}>акция</span>
-                    <span className={s.newPrace}>190 000</span>
+                    <span className={s.newPrace}>{props.newPrace}</span>
                 </div>
-                <div className={s.oldPrace}>225 000</div>
+                <div className={s.oldPrace}>{props.oldPrace}</div>
                 <div className={s.stockWrapImg}>
-                    <img src={StockImg} alt="" />
+                    {/* <img className={s.stockImg} src={props.stockImg} alt="" /> */}
                 </div>
-                <h2 className={s.stockTitle}>Лодочный мотор Suzuki DF9.9BRS</h2>
+                <h2 className={s.stockTitle}>{props.stockTitle}</h2>
                 <div className={s.stockBottom}>
                     <p className={s.stockTextInfo}>Акция действует до</p>
-                    <p className={s.stockDate}>31.08.2020</p>
+                    <p className={s.stockDate}>{props.stockDate}</p>
                 </div>
             
         </section>

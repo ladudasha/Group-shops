@@ -10,7 +10,7 @@
   display: block;
   width: 15px;
   height: 28px;
-  background-image: url("/src/assets/images/mainImages/rowRight.svg");
+  background-image: url("/src/assets/images/mainImages/mainInfo/rowRight.svg");
   background-size: contain;
   transform: rotate(180deg);
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 .bannerSlider .swiper-button-next::after {
   content:"" !important;
   display: block;
-  background-image: url(./../../../../assets/images/mainImages/rowRight.svg); 
+  background-image: url("/src/assets/images/mainImages/mainInfo/rowRight.svg"); 
   background-size: contain;
   width: 15px;
   height: 28px;

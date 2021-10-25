@@ -4,9 +4,7 @@ function BannerItem(props) {
 
 
     return ( 
-    
         <img className={s.bannerItemImg} src={props.img} alt=""/>
-
     );
 }
 

@@ -7,9 +7,9 @@ function SearchBlock(props) {
         <div className={s.container}>
             <section className={s.searchBlock}>
                 <div className={s.selectButtons}>
-                    <button className={s.btnSelect}>{props.label}</button>
-                    <button className={s.btnSelect}>{props.label}</button>
-                    <button className={s.btnSelect}>{props.label}</button>
+                    <button className={s.btnSelect}>{props.label1}</button>
+                    <button className={s.btnSelect}>{props.label2}</button>
+                    <button className={s.btnSelect}>{props.label3}</button>
                 </div>
                 <div className={s.inputBlock}>
                     <form action="#" method="get">

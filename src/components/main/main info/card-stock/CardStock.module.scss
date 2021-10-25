@@ -43,7 +43,7 @@
 }
 
 .newPrace::after {
-    content: url(./../../../../assets/images/mainImages/blueRubl.svg);
+    content: url(./../../../../assets/images/mainImages/mainInfo/blueRubl.svg);
     position: absolute;
     top: -1px;
     right: 5px;
@@ -66,19 +66,19 @@
     width: 60px;
     height: 0.5px;
     background-color: #C4C4C4;
-    text-decoration: line-through;
-    // transform: rotateY(45deg);
-    // -webkit-transform: rotateY(45deg);
-    // -moz-transform: rotateY(45deg);
-    // -ms-transform: rotateY(45deg);
-    // -o-transform: rotateY(45deg);
+    // text-decoration: line-through;
+    transform: rotate(45deg);
+    -webkit-transform: rotateY(45deg);
+    -moz-transform: rotateY(45deg);
+    -ms-transform: rotateY(45deg);
+    -o-transform: rotateY(45deg);
     position: absolute;
     top: 6px;
     right: 11px;
 }
 
 .oldPrace::after {
-    content: url(./../../../../assets/images/mainImages/grayRubl.png);
+    content: url(./../../../../assets/images/mainImages/mainInfo/grayRubl.png);
     position: absolute;
     top: 0px;
     right: 1px;

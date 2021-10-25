@@ -15,6 +15,7 @@ import Products from "./../products/Products";
 import MainInfo from "./main info/MainInfo";
 import ProductsItemsBlock from "../Products-Items-Block/ProductsItemsBlock";
 import SearchBlock from './search block/SearchBlock';
+
 import SectionSale from "./section-sale/SectionSale";
 
 import img111 from "./../../assets/images/WithProducts/img1.png";
@@ -61,8 +62,6 @@ function Main(props) {
         img: img6,
         link: "006"
     }
-
-    
 
 
     const databtn1 = {
@@ -134,7 +133,7 @@ function Main(props) {
         <div className={s.main}>
 
             <MainInfo/>
-            <SearchBlock label={databtn1.label}/>
+            <SearchBlock label1={databtn1.label} label2={databtn2.label} label3={databtn3.label}/>
             <Products className={s.products} data={data} data2={data2} data3={data3} data4={data4} data5={data5} data6={data6}/>
             <ProductsItemsBlock cardData={popularProductsCardData}/>
             <SectionSale/>
