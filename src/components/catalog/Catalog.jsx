@@ -99,7 +99,7 @@ function Catalog(props) {
 
                     <div className={s.paginationPages}>pagination pages???</div>
                 </div>
-                <BreadcrumbsDasha/>
+                
             </div>
         </div>
     );
