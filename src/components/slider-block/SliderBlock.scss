@@ -1,18 +1,17 @@
-.sliderBlock .swiper-container {
-    max-width: 100%;
-    width: 100%;
-    // margin-bottom: 40px;
-    position: relative;
-}
-
 .sliderBlock {
     padding-bottom: 40px;
     padding-top: 25px;
+    .swiper-container {
+        max-width: 100%;
+        width: 100%;
+        // margin-bottom: 40px;
+        position: relative;
+    }
+    // .swiper-wrapper {
+    //     transform: translate3d(100px, 0px, 0px) ;
+    // }
 }
 
-// .swiper-wrapper {
-//     transform: translate3d(-3796px, 0px, 0px);
-// }
 .swiperButton {
     content: ''!important;
     position: absolute;
