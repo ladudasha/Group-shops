@@ -9,7 +9,8 @@
     display: grid;
     grid-template-columns: 290px 1fr;
     grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 'title title' 'sidebar catalog' 'pagination pagination';
+    border: 1px solid pink;
+    grid-template-areas: 'title title' 'sidebar catalog' 'sidebar pagination';
 }
 
 .catalogTitleBlock {
