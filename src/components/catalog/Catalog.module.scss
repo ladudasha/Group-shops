@@ -1,31 +1,29 @@
-.container{
+.container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(167, 224, 167);
+    border: 2px solid rgb(164, 191, 202);
 }
 
-.catalogContent{
+.catalogContent {
     display: grid;
     grid-template-columns: 290px 1fr;
     grid-template-rows: 100px 1fr 100px;
-    border: 1px solid pink;
-    grid-template-areas:
-    'title title'
-    'sidebar catalog'
-    'pagination pagination';
-
+    grid-template-areas: 'title title' 'sidebar catalog' 'pagination pagination';
 }
 
-.catalogTitleBlock{
+.catalogTitleBlock {
     grid-area: title;
 }
-.filterProductsBlock{
+
+.filterProductsBlock {
     grid-area: sidebar;
 }
-.catalogCards{
+
+.catalogCards {
     grid-area: catalog;
 }
-.paginationPages{
+
+.paginationPages {
     grid-area: pagination;
 }
