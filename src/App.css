@@ -1,14 +1,14 @@
-.wrapperGreat{
+.wrapperGreat {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* .contentBlock{
+.contentBlock {
     flex: 1;
-} */
+}
 
-.products{
+.products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 129px);

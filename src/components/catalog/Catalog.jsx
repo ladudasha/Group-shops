@@ -23,6 +23,7 @@ import CatalogProductsCards from './catalog products cards/CatalogProductsCards'
 
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import CatalogTop from "../catalogTop/CatalogTop";
 
 function Catalog(props) {
 
@@ -92,13 +93,16 @@ function Catalog(props) {
     return ( 
         <div className={s.catalog}>
             <div className={s.container}>
+            <BasicBreadcrumbs/> 
                 <div className={s.catalogContent}>
 
-                    <div className={s.catalogTop}>
-                        <BasicBreadcrumbs/>
-                        <h1 id="jetSkis">Гидроциклы</h1>
+            <CatalogTop/>
+
+                    {/* <div className={s.catalogTop}>
+                   
+                        <h1>Гидроциклы</h1>
                     </div>
-                        
+                         */}
                     <sidebar className={s.filterProductsBlock}><CatalogLeft/></sidebar>
 
                     <div className={s.catalogProducts}>

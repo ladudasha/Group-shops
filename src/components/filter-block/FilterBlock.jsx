@@ -58,7 +58,7 @@ export default function FilterBlock() {
 
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Наличие #1</Typography>
+          <Typography className={s.filterTitle}>Наличие #1</Typography>
         </AccordionSummary>
         <AccordionDetails>
             <div className={s.catagoriesWrap}>
@@ -156,22 +156,22 @@ export default function FilterBlock() {
             
                     <div className={s.schoice}>
                         <Checkbox/>
-                        <p className={s.modelWrap}>Sea-doo Spark 2</p>
+                        <p className={s.modelText}>Sea-doo Spark 2</p>
                     </div>
                 
                     <div className={s.schoice}>
                         <Checkbox/>
-                        <p className={s.modelWrap}>SeaDoo GTI 155</p>
+                        <p className={s.modelText}>SeaDoo GTI 155</p>
                     </div>
 
                     <div className={s.schoice}>
                         <Checkbox/>
-                        <p className={s.modelWrap}>Spark 3</p>
+                        <p className={s.modelText}>SeaDoo Spark 90 </p>
                     </div>
 
                     <div className={s.schoice}>
                         <Checkbox/>
-                        <p className={s.modelWrap}>SeaDoo GTR 230</p>
+                        <p className={s.modelText}>SeaDoo GTR 230</p>
                     </div>
                    
                 </div>  
