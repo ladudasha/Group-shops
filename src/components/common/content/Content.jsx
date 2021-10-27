@@ -10,7 +10,7 @@ function Content(props) {
 
 
     return ( 
-        <div>
+        <div className={s.contentInfo}>
             <Main/>
             <Catalog/>
             {/* <ProductDescription/> */}

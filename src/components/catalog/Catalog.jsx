@@ -1,7 +1,9 @@
 
 import BasicBreadcrumbs from "../basic breadcrumbs/BasicBreadcrumbs";
-import CatalogSlider from "./catalog slider/CatalogSlider";
+
 import s from "./Catalog.module.scss";
+
+
 
 import img31 from './../../assets/images/catalogImages/img31.png';
 import img32 from './../../assets/images/catalogImages/img32.png';
@@ -17,6 +19,10 @@ import img41 from './../../assets/images/catalogImages/img41.png';
 import img42 from './../../assets/images/catalogImages/img42.png';
 
 import CatalogLeft from "../catalog-left/CatalogLeft";
+import CatalogProductsCards from './catalog products cards/CatalogProductsCards';
+
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 function Catalog(props) {
 
@@ -95,11 +101,16 @@ function Catalog(props) {
                         
                     <sidebar className={s.filterProductsBlock}><CatalogLeft/></sidebar>
 
-                    <div className={s.catalogCards}>Catalog
-                        <CatalogSlider data1={catalogdata1}  data2={catalogdata2} data3={catalogdata3} data4={catalogdata4} data5={catalogdata5} data6={catalogdata6} data7={catalogdata7} data8={catalogdata8} data9={catalogdata9} data10={catalogdata10} data11={catalogdata11} data12={catalogdata12}/>
+                    <div className={s.catalogProducts}>
+                    Catalog
+                    <CatalogProductsCards data1={catalogdata1} data2={catalogdata2} data3={catalogdata3} data4={catalogdata4} data5={catalogdata5} data6={catalogdata6} data7={catalogdata7} data8={catalogdata8} data9={catalogdata9} data10={catalogdata10} data11={catalogdata11} data12={catalogdata12}/>
                     </div>
 
-                    <div className={s.paginationPages}>pagination pages???</div>
+                    <div className={s.catalogPagination}>
+                        <Stack spacing={1}>
+                            <Pagination count={11} shape="rounded" hidePrevButton hideNextButton/>
+                        </Stack>
+                    </div>
                 </div>
                 
             </div>
@@ -108,3 +119,5 @@ function Catalog(props) {
 }
 
 export default Catalog;
+
+ 

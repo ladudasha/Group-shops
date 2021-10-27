@@ -15,9 +15,9 @@ function App() {
 
     return ( 
     <BrowserRouter >
-        <div>
+        <div className="wrapperGreat">
             <Header/>
-            <Content/>
+            <Content className="contentBlock"/>
             <Footer/>
         </div>
     </BrowserRouter>
