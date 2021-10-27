@@ -16,6 +16,8 @@ import img40 from './../../assets/images/catalogImages/img40.png';
 import img41 from './../../assets/images/catalogImages/img41.png';
 import img42 from './../../assets/images/catalogImages/img42.png';
 
+import CatalogLeft from "../catalog-left/CatalogLeft";
+
 function Catalog(props) {
 
     const catalogdata1 = {
@@ -91,7 +93,7 @@ function Catalog(props) {
                         <h1 id="jetSkis">Гидроциклы</h1>
                     </div>
                         
-                    <sidebar className={s.filterProductsBlock}>filterBlock</sidebar>
+                    <sidebar className={s.filterProductsBlock}><CatalogLeft/></sidebar>
 
                     <div className={s.catalogCards}>Catalog
                         <CatalogSlider data1={catalogdata1}  data2={catalogdata2} data3={catalogdata3} data4={catalogdata4} data5={catalogdata5} data6={catalogdata6} data7={catalogdata7} data8={catalogdata8} data9={catalogdata9} data10={catalogdata10} data11={catalogdata11} data12={catalogdata12}/>

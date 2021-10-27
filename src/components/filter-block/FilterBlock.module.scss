@@ -5,3 +5,28 @@
 .newsWrap {
     display: flex;
 }
+
+.schoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brendWrap {
+    display: flex;
+}
+
+// .schoice:last-child {
+//     flex-wrap: wrap;
+// }
+.modelChois {
+    max-width: 291px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
+}
+
+// .modelWrap {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+// }

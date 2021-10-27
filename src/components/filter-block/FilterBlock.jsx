@@ -62,14 +62,14 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
             <div className={s.catagoriesWrap}>
-                    <div>
+                    <div className={s.schoice}>
                         <Checkbox/>
-                        <p className={s.categories}>В наличие</p>
+                        <p className={s.categoriesText}>В наличие</p>
                     </div>
                 
-                    <div>
+                    <div className={s.schoice}>
                         <Checkbox/>
-                        <p className={s.categories}>Под заказ</p>
+                        <p className={s.categoriesText}>Под заказ</p>
                     </div>
                 </div>
         </AccordionDetails>
@@ -81,18 +81,18 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <div className="s.newsWrap">
-                <div>
+          <div className={s.newsWrap}>
+                <div className={s.schoice}>
                     <Checkbox/>
                     <p className={s.newsText}>Все</p>
                 </div>
                 
-                <div>
+                <div className={s.schoice}>
                     <Checkbox/>
                     <p className={s.newsText}>Новинки</p>
                 </div>
 
-                <div>
+                <div className={s.schoice}>
                     <Checkbox/>
                     <p className={s.newsText}>Акции</p>
                 </div>
@@ -120,51 +120,56 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <div className="brendWrap">
-                    <div>
+          <div className={s.brendWrap}>
+                    <div className={s.schoice}>
                         <Checkbox/>
                         <p className={s.brendText}>BRP</p>
                     </div>
                 
-                    <div>
+                    <div className={s.schoice}>
                         <Checkbox/>
                         <p className={s.brendText}>Spark 2</p>
                     </div>
 
-                    <div>
+                    <div className={s.schoice}>
                         <Checkbox/>
                         <p className={s.brendText}>Spark 3</p>
                     </div>
-                    <a href="">Показать еще</a>
+                   
                 </div> 
+                <a href="">Показать еще</a>
           </Typography>
         </AccordionDetails>
-      </Accordion>
+  </Accordion>
 
-      <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+   <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-          <Typography>Модель #5</Typography>
+         <Typography>Модель #5</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-              <input type="text" placeholder="Введите модель" />
-          <div className="modelWrap">
-                    <div>
+      <Typography>
+      <div className={s.modelChois}>
+                <input  type="text" placeholder="Введите модель" />
+           </div>
+            
+          <div className={s.modelWrap}>
+            
+                    <div className={s.schoice}>
                         <Checkbox/>
                         <p className={s.modelWrap}>Sea-doo Spark 2</p>
                     </div>
                 
-                    <div>
+                    <div className={s.schoice}>
                         <Checkbox/>
                         <p className={s.modelWrap}>SeaDoo GTI 155</p>
                     </div>
 
-                    <div>
+                    <div className={s.schoice}>
                         <Checkbox/>
                         <p className={s.modelWrap}>Spark 3</p>
                     </div>
 
-                    <div>
+                    <div className={s.schoice}>
                         <Checkbox/>
                         <p className={s.modelWrap}>SeaDoo GTR 230</p>
                     </div>
