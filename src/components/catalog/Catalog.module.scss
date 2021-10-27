@@ -8,11 +8,11 @@
 .catalogContent {
     display: grid;
     grid-template-columns: 301px 1fr;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 200px 1fr 200px;
     grid-template-areas: 'title title' 'sidebar catalog' 'sidebar pagination';
 }
 
-.catalogTitleBlock {
+.catalogTop {
     grid-area: title;
 }
 
@@ -20,10 +20,14 @@
     grid-area: sidebar;
 }
 
-.catalogCards {
+.catalogProducts {
     grid-area: catalog;
 }
 
-.paginationPages {
+.catalogPagination{
     grid-area: pagination;
+
+    display:flex;
+    align-items: center;
+    justify-content: center; 
 }
