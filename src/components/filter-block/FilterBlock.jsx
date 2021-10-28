@@ -8,6 +8,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
 import Checkbox from '@mui/material/Checkbox';
+import FilterBattons from '../filter-battons/FilterBattons';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -178,18 +179,40 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            блаблабла 
+            <FilterBattons/>
           </Typography>
         </AccordionDetails>
       </Accordion>
 
       <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
         <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-          <h2 className={s.filterTitle}>Акции</h2>
+          <h2 className={s.filterTitle}>Страны</h2>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            блаблабла 
+          <div className={s.countruWrap}>
+            
+            <div className={s.schoice}>
+                <Checkbox className={s.catalogCheck}/>
+                <p className={s.checkText}>Россия</p>
+            </div>
+        
+            <div className={s.schoice}>
+                <Checkbox className={s.catalogCheck}/>
+                <p className={s.checkText}>Китай</p>
+            </div>
+
+            <div className={s.schoice}>
+                <Checkbox className={s.catalogCheck}/>
+                <p className={s.checkText}>Германия</p>
+            </div>
+
+            <div className={s.schoice}>
+                <Checkbox className={s.catalogCheck}/>
+                <p className={s.checkText}>CША</p>
+            </div>
+           
+        </div>   
           </Typography>
         </AccordionDetails>
       </Accordion>

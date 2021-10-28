@@ -28,7 +28,8 @@
     border: 1px solid #E0E0E0;
 }
 
-.modelWrap {
+.modelWrap,
+.countruWrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
