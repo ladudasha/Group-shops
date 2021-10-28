@@ -26,12 +26,7 @@ import Stack from '@mui/material/Stack';
 import CatalogTop from "../catalogTop/CatalogTop";
 
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
 
-function valuetext(value) {
-    return `${value}°C`;
-  }
 
 
 function Catalog(props) {
@@ -97,11 +92,7 @@ function Catalog(props) {
         cash: "587 440 ₽",
     }
 
-    const [value, setValue] = React.useState([20, 37]);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  
 
     return ( 
         <div className={s.catalog}>
@@ -127,16 +118,7 @@ function Catalog(props) {
                         <Stack spacing={1}>
                             <Pagination count={11} shape="rounded" hidePrevButton hideNextButton/>
                         </Stack>
-
-                        <Box sx={{ width: 300 }}>
-                            <Slider
-                                getAriaLabel={() => 'Temperature range'}
-                                value={value}
-                                onChange={handleChange}
-                                valueLabelDisplay="auto"
-                                getAriaValueText={valuetext}
-                            />
-                            </Box>
+                            
                     </div>
                 </div>
                 
