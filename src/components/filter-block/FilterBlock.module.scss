@@ -31,3 +31,21 @@
 .filterTitle {
     font-size: 50px;
 }
+
+.polzunok{
+    display: flex;
+    justify-content: space-between;
+}
+
+.polzunokInputLeft{
+    max-width: 50px;
+    border:none;
+    border-bottom: 1px solid #2F3035;
+    
+}
+
+.polzunokInputRight{
+    max-width: 50px;
+    border:none;
+    border-bottom: 1px solid #2F3035;
+}

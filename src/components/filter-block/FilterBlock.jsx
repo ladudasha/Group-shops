@@ -9,6 +9,13 @@ import Typography from '@mui/material/Typography';
 
 import Checkbox from '@mui/material/Checkbox';
 
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';
+
+function valuetext(value) {
+  return `${value}°C`;
+}
+
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -51,6 +58,12 @@ export default function FilterBlock() {
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
+  };
+
+  const [value, setValue] = React.useState([20, 37]);
+
+  const handleChangeRangeSlider = (event, newValue) => {
+    setValue(newValue);
   };
 
   return (
@@ -109,7 +122,20 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          блаблабла
+          <Box sx={{ width: 280 }}>
+      <Slider
+        getAriaLabel={() => 'Temperature range'}
+        value={value}
+        onChange={handleChangeRangeSlider}
+        valueLabelDisplay="auto"
+        getAriaValueText={valuetext}
+      />
+    </Box>
+
+            <div class={s.polzunok}>
+              <p><label for="name">от</label><input type="text" class={s.polzunokInputLeft} placeholder="100 000"/></p>
+              <p><label for="name">до</label> <input type="text" class={s.polzunokInputRight} placeholder="500 000"/></p> 
+            </div>
           </Typography>
         </AccordionDetails>
       </Accordion>
