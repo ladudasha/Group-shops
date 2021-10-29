@@ -99,8 +99,10 @@ function Catalog(props) {
             <div className={s.container}>
             <BasicBreadcrumbs/> 
                 <div className={s.catalogContent}>
-
-            <CatalogTop/>
+                    <div className={s.topTitle}>
+                        <CatalogTop/>
+                    </div>
+            
 
                     {/* <div className={s.catalogTop}>
                    

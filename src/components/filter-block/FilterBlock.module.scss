@@ -20,6 +20,11 @@
 
 .brendWrap {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.schoice{
+    min-width: 21%;
 }
 
 .modelChois {
