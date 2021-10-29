@@ -20,6 +20,11 @@
 
 .brendWrap {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.schoice{
+    min-width: 21%;
 }
 
 .modelChois {
@@ -56,14 +61,42 @@
 }
 
 .polzunokInputLeft{
-    max-width: 50px;
+    max-width: 74px;
+    padding-left: 12px;
     border:none;
-    border-bottom: 1px solid #2F3035;
+}
 
+.polzunokInputLeft::placeholder{
+    text-decoration: underline;
+    text-decoration-color: #2F3035;
+    -moz-text-decoration-color: #2F3035;
+    color: #2F3035;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
 }
 
 .polzunokInputRight{
-    max-width: 50px;
+    max-width: 74px;
+    padding-left: 12px;
     border:none;
-    border-bottom: 1px solid #2F3035;
+    
+}
+
+.polzunokInputRight::placeholder{
+    text-decoration: underline;
+    text-decoration-color: #2F3035;
+    -moz-text-decoration-color: #2F3035;
+    color: #2F3035;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+.labelName{
+    font-family: 'SFProDisplayRegular';
+    font-size: 14px;
+    color: #C4C4C4;
 }
