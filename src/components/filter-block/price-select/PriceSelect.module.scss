@@ -1,0 +1,31 @@
+.priceSelect{
+    margin-left: 26px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    position: relative;
+    &::after{
+        content:"";
+        position: absolute;
+        background-color: #C4C4C4;
+        width: 268px;
+        height: 1px;
+        top: 61px;
+        left: -23px;
+    }
+}
+Select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+
+}
+.filterTitle{
+    color: #2F3035;
+    font-family: 'SFProDisplayMedium';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
