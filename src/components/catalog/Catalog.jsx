@@ -101,18 +101,10 @@ function Catalog(props) {
                 <div className={s.catalogContent}>
                     <div className={s.topTitle}>
                         <CatalogTop/>
-                    </div>
-            
-
-                    {/* <div className={s.catalogTop}>
-                   
-                        <h1>Гидроциклы</h1>
-                    </div>
-                         */}
+                    </div>            
                     <sidebar className={s.filterProductsBlock}><CatalogLeft/></sidebar>
 
-                    <div className={s.catalogProducts}>
-                    Catalog
+                    <div className={s.catalogProducts}>                    
                     <CatalogProductsCards data1={catalogdata1} data2={catalogdata2} data3={catalogdata3} data4={catalogdata4} data5={catalogdata5} data6={catalogdata6} data7={catalogdata7} data8={catalogdata8} data9={catalogdata9} data10={catalogdata10} data11={catalogdata11} data12={catalogdata12}/>
                     </div>
 

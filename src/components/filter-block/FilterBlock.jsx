@@ -8,7 +8,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
 import Checkbox from '@mui/material/Checkbox';
-import FilterBattons from '../filter-battons/FilterBattons';
+import FilterButtons from '../filter-buttons/FilterButtons';
 
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
@@ -206,7 +206,7 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <FilterBattons/>
+            <FilterButtons/>
           </Typography>
         </AccordionDetails>
       </Accordion>

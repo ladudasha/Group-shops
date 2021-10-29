@@ -11,7 +11,7 @@ function CatalogTop() {
             <div className={s.container}>
                 
                     
-                    <h1>Гидроциклы</h1>
+                    <h2 className={s.title}>Гидроциклы</h2>
                     <div className={s.wrapper}>
                         <div className={s.groupLeft}>
                             <button>Полноприводные</button>
@@ -22,8 +22,11 @@ function CatalogTop() {
 
                         <div className={s.groupRight}>
                             <FilterTopSelect/>
-                            <button><img src={icon1} alt="" /></button>
-                            <button><img src={icon2} alt="" /></button>
+                            <div className={s.btnBlock}>
+                                <button className={s.btnRight}><img src={icon1} alt="" /></button>
+                                <button className={s.btnRight}><img src={icon2} alt="" /></button>
+                            </div>
+                            
                         </div>
 
                     </div>

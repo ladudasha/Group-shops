@@ -13,6 +13,7 @@ const MenuProps = {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
       width: 250,
+      
     },
   },
 };
@@ -55,8 +56,8 @@ export default function FilterTopSelect() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-name-label">Name</InputLabel>
+      <FormControl sx={{ m: 1, width: 178, hight: 33,}}>
+        <InputLabel id="demo-multiple-name-label">По полулярности</InputLabel>
         <Select
           labelId="demo-multiple-name-label"
           id="demo-multiple-name"
@@ -80,3 +81,43 @@ export default function FilterTopSelect() {
     </div>
   );
 }
+// /* Group 14.1 */
+
+// position: absolute;
+// width: 178px;
+// height: 33px;
+// left: 1274px;
+// top: 338px;
+
+
+
+// /* Rectangle 39 */
+
+// position: absolute;
+// width: 178px;
+// height: 33px;
+// left: 1274px;
+// top: 338px;
+
+// border: 1.5px solid #D7D9DF;
+// box-sizing: border-box;
+
+
+// /* По полулярности */
+
+// position: absolute;
+// width: 112px;
+// height: 17px;
+// left: 1294px;
+// top: 346px;
+
+// font-family: SF Pro Display;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 14px;
+// line-height: 17px;
+// /* identical to box height */
+
+// /* Основной текст */
+// color: #2F3035;
+

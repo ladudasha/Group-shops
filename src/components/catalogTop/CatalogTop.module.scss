@@ -2,11 +2,38 @@
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid rebeccapurple;
+    border: 1px solid rgb(154, 206, 211);
+}
+
+// .catalogTop {
+//     padding-top: 41px;
+//     padding-bottom: 47px;
+// }
+.title {
+    padding-bottom: 26px;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.groupRight {
+    display: flex;
+}
+
+.btnRight {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.btnRight:first-child {
+    margin-right: 10px;
+}
+
+.btnBlock {
+    display: flex;
+    margin-left: 34px;
 }
