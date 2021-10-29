@@ -118,7 +118,8 @@ export default function FilterBlock() {
           <Typography>
           <Box sx={{ width: 280 }}>
       <Slider
-        getAriaLabel={() => 'Temperature range'}
+        size="small"
+        getAriaLabel={() => 'Money range'}
         value={value}
         onChange={handleChangeRangeSlider}
         valueLabelDisplay="auto"
@@ -127,8 +128,8 @@ export default function FilterBlock() {
     </Box>
 
             <div class={s.polzunok}>
-              <p><label for="name">от</label><input type="text" class={s.polzunokInputLeft} placeholder="100 000"/></p>
-              <p><label for="name">до</label> <input type="text" class={s.polzunokInputRight} placeholder="500 000"/></p> 
+              <p><label className={s.labelName} for="name">от</label><input type="text" class={s.polzunokInputLeft} placeholder="100 000"/></p>
+              <p><label className={s.labelName} for="name">до</label> <input type="text" class={s.polzunokInputRight} placeholder="500 000"/></p> 
             </div>
           </Typography>
         </AccordionDetails>
