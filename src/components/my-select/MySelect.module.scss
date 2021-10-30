@@ -1,0 +1,21 @@
+.selectHeader {
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.selectIcon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    // чтобы не сжималась
+}
+
+.selectCurrent {
+    font-style: 18px;
+    line-height: 24px;
+    padding: 8px;
+}

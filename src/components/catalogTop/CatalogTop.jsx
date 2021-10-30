@@ -2,6 +2,8 @@ import FilterTopSelect from "../filter-top-select/FilterTopSelect";
 import s from "./CatalogTop.module.scss";
 import icon1 from "./../../assets/images/CatalogTop/icon1.svg";
 import icon2 from "./../../assets/images/CatalogTop/icon2.svg"
+// import MySelect from "../my-select/MySelect";
+
 
 
 function CatalogTop() {
@@ -21,7 +23,10 @@ function CatalogTop() {
                         </div>
 
                         <div className={s.groupRight}>
-                            <FilterTopSelect/>
+                            
+                          
+                            {/* <FilterTopSelect/> */}
+                            {/* <MySelect/> */}
                             <div className={s.btnBlock}>
                                 <button className={s.btnRight}><img src={icon1} alt="" /></button>
                                 <button className={s.btnRight}><img src={icon2} alt="" /></button>
