@@ -10,7 +10,7 @@ import PriceSelect from "./price-select/PriceSelect"
 
 import Checkbox from '@mui/material/Checkbox';
 import FilterButtons from '../filter-buttons/FilterButtons';
-import FilterBattons from '../filter-buttons/FilterBattons';
+
 
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';

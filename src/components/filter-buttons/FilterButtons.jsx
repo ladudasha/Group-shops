@@ -11,7 +11,7 @@ const BlackButton = styled(Button)({
 });
 
 const MyButton = styled(Button)({
-  borderRadius: "0",
+  borderRadius: "0",  
 });
 export default function FilterButtons() {
 
@@ -25,7 +25,7 @@ export default function FilterButtons() {
       <MyButton  className={s.buttonStyle} size="small" variant="contained" disabled>
       HIT
       </MyButton>
-      <BlackButton  className={s.buttonBlack} size="small" variant="contained" >SALE
+      <BlackButton  className={s.buttonBlack} size="small" variant="contained" >ДИЛЛЕР
       </BlackButton>
     </Stack>
   );
