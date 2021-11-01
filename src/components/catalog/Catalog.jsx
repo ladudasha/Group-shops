@@ -118,7 +118,7 @@ function Catalog(props) {
 
                     <div className={s.catalogPagination}>
                         <Stack spacing={1}>
-                            <Pagination count={11} shape="rounded" hidePrevButton hideNextButton/>
+                            <Pagination className={s.stylePagination} count={11} shape="rounded" hidePrevButton hideNextButton/>
                         </Stack>
                             
                     </div>
