@@ -12,13 +12,11 @@ import Checkbox from '@mui/material/Checkbox';
 import FilterButtons from '../filter-buttons/FilterButtons';
 
 
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+
+import CatalogPolzunok from '../catalog-polzunok/CatalogPolzunok';
 
 
-function valuetext(value) {
-  return `${value}°C`;
-}
+
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -56,13 +54,6 @@ export default function FilterBlock() {
     setExpanded(newExpanded ? panel : false);
   };
   
-
-  const [value, setValue] = React.useState([20, 37]);
-
-  const handleChangeRangeSlider = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
     <div>
 
@@ -119,21 +110,9 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <Box sx={{ width: 280 }}>
-      <Slider
-        size="small"
-        getAriaLabel={() => 'Money range'}
-        value={value}
-        onChange={handleChangeRangeSlider}
-        valueLabelDisplay="auto"
-        getAriaValueText={valuetext}
-      />
-    </Box>
 
-            <div class={s.polzunok}>
-              <p><label className={s.labelName} for="name">от</label><input type="text" class={s.polzunokInputLeft} placeholder="100 000"/></p>
-              <p><label className={s.labelName} for="name">до</label> <input type="text" class={s.polzunokInputRight} placeholder="500 000"/></p> 
-            </div>
+              <CatalogPolzunok/>
+
           </Typography>
         </AccordionDetails>
         <PriceSelect/>

@@ -21,11 +21,10 @@ import img42 from './../../assets/images/catalogImages/img42.png';
 import CatalogLeft from "../catalog-left/CatalogLeft";
 import CatalogProductsCards from './catalog products cards/CatalogProductsCards';
 
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@mui/material/Pagination';
-import PaginationItem from '@mui/material/Pagination';
 
-import Stack from '@mui/material/Stack';
+
 import CatalogTop from "../catalogTop/CatalogTop";
 
 import * as React from 'react';
@@ -99,25 +98,29 @@ function Catalog(props) {
         cash: "587 440 ₽",
     }
 
-    const useStyles = makeStyles((theme) =>({
+    const myPagination = makeStyles((theme) =>({
         root: {
             '& ul > li > button:not(.Mui-selected)': {
               color:'#C4C4C4',
               fontSize: 18,
-              marginRight: 35,
+              marginRight: 25,
             },
             '& .Mui-selected': {
                 padding: 8,
                 fontSize: 18,
-                marginRight: 30,
+                marginRight: 25,
                 backgroundColor: 'transparent',
                 color:'#1C62CD',
                 border:'2px solid #1C62CD',
+                borderRadius: 0,
             },
         },
     }),
     );
-      const classes = useStyles();
+      const classes = myPagination();
+
+
+
     return ( 
         <div className={s.catalog}>
             <div className={s.container}>
@@ -134,15 +137,13 @@ function Catalog(props) {
 
                     <div className={s.catalogPagination}>
 
-                   
                     <Pagination
                         count={11} 
                         hidePrevButton
                         hideNextButton
                         shape="rounded"
-                        className={classes.root} 
-                        
-            />
+                        className={classes.root}/>
+
                     </div>
                 </div>
                 
