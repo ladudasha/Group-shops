@@ -6,12 +6,15 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import PriceSelect from "./price-select/PriceSelect"
 
 import Checkbox from '@mui/material/Checkbox';
-import FilterBattons from '../filter-battons/FilterBattons';
+import FilterButtons from '../filter-buttons/FilterButtons';
+
 
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
+
 
 function valuetext(value) {
   return `${value}°C`;
@@ -104,7 +107,7 @@ export default function FilterBlock() {
                     <p className={s.checkText}>Акции</p>
                 </div>
 
-               
+
         </div>
           </Typography>
         </AccordionDetails>
@@ -133,8 +136,11 @@ export default function FilterBlock() {
             </div>
           </Typography>
         </AccordionDetails>
+        <PriceSelect/>
+        <PriceSelect/>
+        <PriceSelect/>
       </Accordion>
-
+      
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
           <h2 className={s.filterTitle}>Бренд</h2>
@@ -206,7 +212,7 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <FilterBattons/>
+            <FilterButtons/>
           </Typography>
         </AccordionDetails>
       </Accordion>

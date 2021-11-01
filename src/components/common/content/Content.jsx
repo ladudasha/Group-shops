@@ -11,7 +11,7 @@ function Content(props) {
 
     return ( 
         <div className={s.contentInfo}>
-            {/* <Main/> */}
+            <Main/>
             <Catalog/>
             {/* <ProductDescription/> */}
         </div>

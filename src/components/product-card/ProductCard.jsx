@@ -11,8 +11,9 @@ import Favorite from '@mui/icons-material/Favorite';
 
 function ProductCard(props) {
 
-    return (     
-        <div className={s.productCard}>
+    return (   
+    <div className={s.testClass}>
+         <div className={s.productCard}>
             
             <div className={s.productLike}>
                 <Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />}/>
@@ -35,6 +36,8 @@ function ProductCard(props) {
                 <a href="">Сообщить о поступлении</a>            
             </div>         
         </div>    
+    </div>  
+       
     );
 }
 
