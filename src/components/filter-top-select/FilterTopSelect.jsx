@@ -36,12 +36,13 @@ export default function SelectLabels(props) {
   return (
     <div>
       <FormControl className={s.selectHeader} sx={{ m: 1, minWidth: 178, }}>
-      <InputLabel className={s.selectLabel}>По полулярности</InputLabel>
+      {/* <InputLabel className={s.selectLabel}>По полулярности</InputLabel> */}
         <Select
           
           value={age}
           onChange={handleChange}
           displayEmpty
+          autoWidth
           className={classes.root}
         >
           <MenuItem value={10}>По популярности</MenuItem>
