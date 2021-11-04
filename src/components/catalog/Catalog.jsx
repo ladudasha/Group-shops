@@ -21,15 +21,21 @@ import img42 from './../../assets/images/catalogImages/img42.png';
 import CatalogLeft from "../catalog-left/CatalogLeft";
 import CatalogProductsCards from './catalog products cards/CatalogProductsCards';
 
+import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
+
+
 import CatalogTop from "../catalogTop/CatalogTop";
 
 import * as React from 'react';
 
 
 
+
+
 function Catalog(props) {
+
+   
 
     const catalogdata1 = {
         title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
@@ -92,7 +98,28 @@ function Catalog(props) {
         cash: "587 440 ₽",
     }
 
-  
+    const myPagination = makeStyles((theme) =>({
+        root: {
+            '& ul > li > button:not(.Mui-selected)': {
+              color:'#C4C4C4',
+              fontSize: 18,
+              marginRight: 25,
+            },
+            '& .Mui-selected': {
+                padding: 8,
+                fontSize: 18,
+                marginRight: 25,
+                backgroundColor: 'transparent',
+                color:'#1C62CD',
+                border:'2px solid #1C62CD',
+                borderRadius: 0,
+            },
+        },
+    }),
+    );
+      const classes = myPagination();
+
+
 
     return ( 
         <div className={s.catalog}>
@@ -101,26 +128,22 @@ function Catalog(props) {
                 <div className={s.catalogContent}>
                     <div className={s.topTitle}>
                         <CatalogTop/>
-                    </div>
-            
-
-                    {/* <div className={s.catalogTop}>
-                   
-                        <h1>Гидроциклы</h1>
-                    </div>
-                         */}
+                    </div>            
                     <sidebar className={s.filterProductsBlock}><CatalogLeft/></sidebar>
 
-                    <div className={s.catalogProducts}>
-                    Catalog
+                    <div className={s.catalogProducts}>                    
                     <CatalogProductsCards data1={catalogdata1} data2={catalogdata2} data3={catalogdata3} data4={catalogdata4} data5={catalogdata5} data6={catalogdata6} data7={catalogdata7} data8={catalogdata8} data9={catalogdata9} data10={catalogdata10} data11={catalogdata11} data12={catalogdata12}/>
                     </div>
 
                     <div className={s.catalogPagination}>
-                        <Stack spacing={1}>
-                            <Pagination count={11} shape="rounded" hidePrevButton hideNextButton/>
-                        </Stack>
-                            
+
+                    <Pagination
+                        count={11} 
+                        hidePrevButton
+                        hideNextButton
+                        shape="rounded"
+                        className={classes.root}/>
+
                     </div>
                 </div>
                 
