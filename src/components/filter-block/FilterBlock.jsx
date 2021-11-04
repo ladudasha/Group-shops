@@ -79,7 +79,6 @@ export default function FilterBlock() {
     setExpanded(newExpanded ? panel : false);
   };
   
-<<<<<<< HEAD
 
   const [value, setValue] = React.useState([20, 37]);
 
@@ -89,8 +88,6 @@ export default function FilterBlock() {
 
   
 
-=======
->>>>>>> 163512a087e243b0df2e7f3df7c5be8e2957cef5
   return (
     <div>
 
