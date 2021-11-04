@@ -48,7 +48,32 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function FilterBlock() {
-  
+  const data1 = {
+    title:"Мощность, л.с.",
+    value1:90,
+    value2:130,
+    value3:154,
+    value4:230,
+    value5:300,
+  }
+
+  const data2 = {
+    title:"Мощность двигателя, л.с.",
+    value1:90,
+    value2:130,
+    value3:154,
+    value4:230,
+    value5:300,
+  }
+
+  const data3 = {
+    title:"Макс. скорость",
+    value1:110,
+    value2:120,
+    value3:130,
+    value4:140,
+    value5:150,
+  }
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -61,6 +86,8 @@ export default function FilterBlock() {
   const handleChangeRangeSlider = (event, newValue) => {
     setValue(newValue);
   };
+
+  
 
   return (
     <div>
@@ -135,9 +162,11 @@ export default function FilterBlock() {
             </div>
           </Typography>
         </AccordionDetails>
-        <PriceSelect/>
-        <PriceSelect/>
-        <PriceSelect/>
+        <div className={s.priceSelections}>
+        <PriceSelect title={data1.title} value1={data1.value1} value2={data1.value2} value3={data1.value3} value4={data1.value4} value5={data1.value5}/>
+        <PriceSelect title={data2.title} value1={data2.value1} value2={data2.value2} value3={data2.value3} value4={data2.value4} value5={data2.value5}/>
+        <PriceSelect title={data3.title} value1={data3.value1} value2={data3.value2} value3={data3.value3} value4={data3.value4} value5={data3.value5}/>
+        </div>
       </Accordion>
       
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>

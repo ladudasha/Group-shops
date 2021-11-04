@@ -17,7 +17,7 @@ import Select from '@mui/material/Select';
         return (
             <div className={s.container}>
             <div className={s.priceSelect}>
-                <span className={s.filterTitle}>Мощность, л.с.</span>
+                <span className={s.filterTitle}>{props.title}</span>
                 <FormControl variant="standard" sx={{ m: 1, minWidth: 68, minHeight:20, margin:0, padding:0,}}>
                     <InputLabel id="demo-simple-select-standard-label"></InputLabel>
                     <Select
@@ -26,16 +26,15 @@ import Select from '@mui/material/Select';
                         value={speed}
                         // onChange={handleChange}
                         // class="glyphicon glyphicon-menu-down blue"
-
                     >
                         <MenuItem value="">
                             <em></em>
                         </MenuItem>
-                        <MenuItem value={90}>90</MenuItem>
-                        <MenuItem value={130}>130</MenuItem>
-                        <MenuItem value={154}>154</MenuItem>
-                        <MenuItem value={230}>230</MenuItem>
-                        <MenuItem value={300}>300</MenuItem>
+                        <MenuItem value={props.value1}>{props.value1}</MenuItem>
+                        <MenuItem value={props.value2}>{props.value2}</MenuItem>
+                        <MenuItem value={props.value3}>{props.value3}</MenuItem>
+                        <MenuItem value={props.value4}>{props.value4}</MenuItem>
+                        <MenuItem value={props.value5}>{props.value5}</MenuItem>
                     </Select>
                 </FormControl>
             </div>

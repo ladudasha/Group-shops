@@ -3,17 +3,18 @@
     display: flex;
     align-items:flex-end;
     justify-content: space-between;
-    margin-bottom: 48px;
     position: relative;
+    margin-right: 11px;
     &::after{
         content:"";
         position: absolute;
         background-color: #C4C4C4;
-        width: 268px;
-        height: 1px;
-        top: 61px;
-        left: -23px;
+        width: 291px;
+        height: 2px;
+        bottom: -19px;
+        left: -27px;
     }
+    
 }
 Select{
     -webkit-appearance: none;
