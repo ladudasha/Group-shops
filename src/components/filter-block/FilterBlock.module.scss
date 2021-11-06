@@ -6,6 +6,8 @@
 
 .catalogCheck {
     padding: 4px !important;
+    // color: #CDCDCD !important;
+    // background: #1C62CD; !important;
 }
 
 .newsWrap {
@@ -21,6 +23,17 @@
 .brendWrap {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.linkMore {
+    color: #1C62CD;
+    cursor: pointer;
+    text-decoration-line: underline;
+    font-family: 'SFProDisplayRegular';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .schoice {
@@ -34,10 +47,11 @@
 }
 
 .modelWrap,
-.countruWrap {
+.counteruWrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 20px;
 }
 
 .filterTitle {

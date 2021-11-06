@@ -178,7 +178,7 @@ export default function FilterBlock() {
                         <p className={s.checkText}>Spark 3</p>
                     </div>                  
                 </div> 
-                <a to="">Показать еще</a>
+                <a  className={s.linkMore} href="">Показать еще</a>
           </Typography>
         </AccordionDetails>
   </Accordion>
@@ -213,9 +213,10 @@ export default function FilterBlock() {
                     <div className={s.schoice}>
                         <Checkbox className={s.catalogCheck}/>
                         <p className={s.checkText}>SeaDoo GTR 230</p>
-                    </div>
+          </div>                   
                   
-                </div>  
+                </div>
+                <a  className={s.linkMore} href="">Показать еще</a>  
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -237,7 +238,7 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <div className={s.countruWrap}>
+          <div className={s.counteruWrap}>
             
             <div className={s.schoice}>
                 <Checkbox className={s.catalogCheck}/>
@@ -260,6 +261,7 @@ export default function FilterBlock() {
             </div>
            
         </div>   
+        <a  className={s.linkMore} href="">Показать еще</a>
           </Typography>
         </AccordionDetails>
       </Accordion>
