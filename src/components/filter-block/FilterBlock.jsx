@@ -35,6 +35,7 @@ const AccordionSummary = styled((props) => (
   flexDirection: 'row-reverse',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(270deg)',
+    
   },
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(1),
@@ -43,6 +44,7 @@ const AccordionSummary = styled((props) => (
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(1),
+  
   
 }));
 
@@ -238,7 +240,7 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <div className={s.counteruWrap}>
+          <div className={s.counterWrap}>
             
             <div className={s.schoice}>
                 <Checkbox className={s.catalogCheck}/>

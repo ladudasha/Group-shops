@@ -24,6 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 18px;
+    justify-items: flex-start;
 }
 
 .linkMore {
@@ -46,12 +47,20 @@
     border: 1px solid #E0E0E0;
 }
 
-.modelWrap,
-.counteruWrap {
+.modelWrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 20px;
+    justify-items: flex-start;
+    margin-top: 20px;
+}
+
+.counterWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: flex-start;
 }
 
 .filterTitle {

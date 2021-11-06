@@ -6,14 +6,9 @@ import s from "./CatalogLeft.module.scss";
 
 function CatalogLeft(props) {
     return ( 
-        <div className={s.catalogLeft}>
-             
-           <FilterTabs/>
-                {/* <button>Параметры</button>
-                <button>по марке</button> */}
-                
-           
-           <FilterBlock/>
+        <div className={s.catalogLeft}>            
+            <FilterTabs/>            
+            <FilterBlock/>
         </div>
     );
 }
