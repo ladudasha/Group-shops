@@ -21,6 +21,7 @@ export default function SelectLabels(props) {
         fontSize: 14,
         color:'#2F3035',
         borderRadius:0,
+        paddingLeft: 15,
       
        
       //   '& .MuiSelect-icon': {
@@ -36,7 +37,7 @@ export default function SelectLabels(props) {
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 178,}}>
-      <InputLabel className={s.selectLabel}>По полулярности</InputLabel>
+      {/* <InputLabel className={s.selectLabel}>По полулярности</InputLabel> */}
         <Select
           
           value={age}
