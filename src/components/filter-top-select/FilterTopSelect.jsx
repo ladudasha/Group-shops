@@ -35,7 +35,7 @@ export default function SelectLabels(props) {
 
   return (
     <div>
-      <FormControl className={s.selectHeader} sx={{ m: 1, minWidth: 178, }}>
+      <FormControl sx={{ m: 1, minWidth: 178,}}>
       <InputLabel className={s.selectLabel}>По полулярности</InputLabel>
         <Select
           

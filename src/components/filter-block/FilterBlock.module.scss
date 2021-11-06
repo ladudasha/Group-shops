@@ -23,7 +23,7 @@
     flex-wrap: wrap;
 }
 
-.schoice{
+.schoice {
     min-width: 21%;
 }
 
@@ -53,21 +53,20 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-<<<<<<< HEAD
 }
 
-.polzunok{
+.polzunok {
     display: flex;
     justify-content: space-between;
 }
 
-.polzunokInputLeft{
+.polzunokInputLeft {
     max-width: 74px;
     padding-left: 12px;
-    border:none;
+    border: none;
 }
 
-.polzunokInputLeft::placeholder{
+.polzunokInputLeft::placeholder {
     text-decoration: underline;
     text-decoration-color: #2F3035;
     -moz-text-decoration-color: #2F3035;
@@ -78,14 +77,13 @@
     line-height: 16.8px;
 }
 
-.polzunokInputRight{
+.polzunokInputRight {
     max-width: 74px;
     padding-left: 12px;
-    border:none;
-    
+    border: none;
 }
 
-.polzunokInputRight::placeholder{
+.polzunokInputRight::placeholder {
     text-decoration: underline;
     text-decoration-color: #2F3035;
     -moz-text-decoration-color: #2F3035;
@@ -96,15 +94,12 @@
     line-height: 16.8px;
 }
 
-.labelName{
+.labelName {
     font-family: 'SFProDisplayRegular';
     font-size: 14px;
     color: #C4C4C4;
 }
 
-.priceSelections{
+.priceSelections {
     margin-bottom: 35px;
-
-=======
->>>>>>> 163512a087e243b0df2e7f3df7c5be8e2957cef5
 }

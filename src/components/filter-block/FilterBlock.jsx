@@ -79,7 +79,6 @@ export default function FilterBlock() {
     setExpanded(newExpanded ? panel : false);
   };
   
-<<<<<<< HEAD
 
   const [value, setValue] = React.useState([20, 37]);
 
@@ -89,9 +88,8 @@ export default function FilterBlock() {
 
   
 
-=======
->>>>>>> 163512a087e243b0df2e7f3df7c5be8e2957cef5
   return (
+    // <BrauserRouter>
     <div>
 
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -169,8 +167,7 @@ export default function FilterBlock() {
                     <div className={s.schoice} style={{marginRight:91}}>
                         <Checkbox className={s.catalogCheck}/>
                         <p className={s.checkText}>BRP</p>
-                    </div>
-                
+                    </div>                
                     <div className={s.schoice}>
                         <Checkbox className={s.catalogCheck}/>
                         <p className={s.checkText}>Spark 2</p>
@@ -179,10 +176,9 @@ export default function FilterBlock() {
                     <div className={s.schoice}>
                         <Checkbox className={s.catalogCheck}/>
                         <p className={s.checkText}>Spark 3</p>
-                    </div>
-                   
+                    </div>                  
                 </div> 
-                <a href="">Показать еще</a>
+                <a to="">Показать еще</a>
           </Typography>
         </AccordionDetails>
   </Accordion>
@@ -195,7 +191,7 @@ export default function FilterBlock() {
       <Typography>
       <div className={s.modelChois}>
                 <input  type="text" placeholder="Введите модель" />
-           </div>
+          </div>
             
           <div className={s.modelWrap}>
             
@@ -218,7 +214,7 @@ export default function FilterBlock() {
                         <Checkbox className={s.catalogCheck}/>
                         <p className={s.checkText}>SeaDoo GTR 230</p>
                     </div>
-                   
+                  
                 </div>  
           </Typography>
         </AccordionDetails>
@@ -268,5 +264,6 @@ export default function FilterBlock() {
         </AccordionDetails>
       </Accordion>
     </div>
+    // </BrauserRouter>
   );
 }
