@@ -14,6 +14,7 @@ import FilterButtons from '../filter-buttons/FilterButtons';
 
 
 import CatalogPolzunok from '../catalog-polzunok/CatalogPolzunok';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -40,7 +41,12 @@ const AccordionSummary = styled((props) => (
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(1),
   },
+  '&.Mui-focused hover': {
+    borderColor: '#007AFF'
+  },
 }));
+
+
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -91,7 +97,7 @@ export default function FilterBlock() {
   
 
   return (
-    // <BrauserRouter>
+    
     <div>
 
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -180,7 +186,9 @@ export default function FilterBlock() {
                         <p className={s.checkText}>Spark 3</p>
                     </div>                  
                 </div> 
-                <a  className={s.linkMore} href="">Показать еще</a>
+              <NavLink className={s.linkMore} to="">Показать еще</NavLink>
+             
+                
           </Typography>
         </AccordionDetails>
   </Accordion>
@@ -218,7 +226,8 @@ export default function FilterBlock() {
           </div>                   
                   
                 </div>
-                <a  className={s.linkMore} href="">Показать еще</a>  
+                <NavLink className={s.linkMore} to="">Показать еще</NavLink>
+                {/* <a  className={s.linkMore} href="">Показать еще</a>   */}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -263,11 +272,12 @@ export default function FilterBlock() {
             </div>
            
         </div>   
-        <a  className={s.linkMore} href="">Показать еще</a>
+        <NavLink className={s.linkMore} to="">Показать еще</NavLink>
+        {/* <a  className={s.linkMore} href="">Показать еще</a> */}
           </Typography>
         </AccordionDetails>
       </Accordion>
     </div>
-    // </BrauserRouter>
+   
   );
 }
