@@ -154,14 +154,14 @@ export default function FilterBlock() {
         <AccordionDetails>
           <Typography>
 
-              <CatalogPolzunok/>
+            <CatalogPolzunok/>
 
           </Typography>
         </AccordionDetails>
         <div className={s.priceSelections}>
-        <PriceSelect title={data1.title} value1={data1.value1} value2={data1.value2} value3={data1.value3} value4={data1.value4} value5={data1.value5}/>
-        <PriceSelect title={data2.title} value1={data2.value1} value2={data2.value2} value3={data2.value3} value4={data2.value4} value5={data2.value5}/>
-        <PriceSelect title={data3.title} value1={data3.value1} value2={data3.value2} value3={data3.value3} value4={data3.value4} value5={data3.value5}/>
+          <PriceSelect title={data1.title} value1={data1.value1} value2={data1.value2} value3={data1.value3} value4={data1.value4} value5={data1.value5}/>
+          <PriceSelect title={data2.title} value1={data2.value1} value2={data2.value2} value3={data2.value3} value4={data2.value4} value5={data2.value5}/>
+          <PriceSelect title={data3.title} value1={data3.value1} value2={data3.value2} value3={data3.value3} value4={data3.value4} value5={data3.value5}/>
         </div>
       </Accordion>
       
@@ -172,65 +172,64 @@ export default function FilterBlock() {
         <AccordionDetails>
           <Typography>
           <div className={s.brendWrap}>
-                    <div className={s.schoice} style={{marginRight:91}}>
-                        <Checkbox className={s.catalogCheck}/>
-                        <p className={s.checkText}>BRP</p>
-                    </div>                
-                    <div className={s.schoice}>
-                        <Checkbox className={s.catalogCheck}/>
-                        <p className={s.checkText}>Spark 2</p>
-                    </div>
+              <div className={s.schoice} style={{marginRight:91}}>
+                    <Checkbox className={s.catalogCheck}/>
+                    <p className={s.checkText}>BRP</p>
+              </div> 
+                            
+              <div className={s.schoice}>
+                    <Checkbox className={s.catalogCheck}/>
+                    <p className={s.checkText}>Spark 2</p>
+              </div>
 
-                    <div className={s.schoice}>
-                        <Checkbox className={s.catalogCheck}/>
-                        <p className={s.checkText}>Spark 3</p>
-                    </div>                  
-                </div> 
+              <div className={s.schoice}>
+                    <Checkbox className={s.catalogCheck}/>
+                    <p className={s.checkText}>Spark 3</p>
+              </div>                  
+          </div> 
               <NavLink className={s.linkMore} to="">Показать еще</NavLink>
-             
-                
-          </Typography>
-        </AccordionDetails>
-  </Accordion>
-
-   <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
-        <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-         <h2 className={s.filterTitle}>Модель</h2>
-        </AccordionSummary>
-        <AccordionDetails>
-      <Typography>
-      <div className={s.modelChois}>
-                <input  type="text" placeholder="Введите модель" />
-          </div>
-            
-          <div className={s.modelWrap}>
-            
-                    <div className={s.schoice}>
-                        <Checkbox className={s.catalogCheck}/>
-                        <p className={s.checkText}>Sea-doo Spark 2</p>
-                    </div>
-                
-                    <div className={s.schoice}>
-                        <Checkbox className={s.catalogCheck}/>
-                        <p className={s.checkText}>SeaDoo GTI 155</p>
-                    </div>
-
-                    <div className={s.schoice}>
-                        <Checkbox className={s.catalogCheck}/>
-                        <p className={s.checkText}>SeaDoo Spark 90 </p>
-                    </div>
-
-                    <div className={s.schoice}>
-                        <Checkbox className={s.catalogCheck}/>
-                        <p className={s.checkText}>SeaDoo GTR 230</p>
-          </div>                   
-                  
-                </div>
-                <NavLink className={s.linkMore} to="">Показать еще</NavLink>
-                {/* <a  className={s.linkMore} href="">Показать еще</a>   */}
+              
           </Typography>
         </AccordionDetails>
       </Accordion>
+
+      <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+        <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
+        <h2 className={s.filterTitle}>Модель</h2>
+        </AccordionSummary>
+        <AccordionDetails>
+        <Typography>
+          <div className={s.modelChois}>
+            <input  type="text" placeholder="Введите модель" />
+          </div>
+
+          <div className={s.modelWrap}>
+              <div className={s.schoice}>
+                  <Checkbox className={s.catalogCheck}/>
+                  <p className={s.checkText}>Sea-doo Spark 2</p>
+              </div>
+
+              <div className={s.schoice}>
+                  <Checkbox className={s.catalogCheck}/>
+                  <p className={s.checkText}>SeaDoo GTI 155</p>
+              </div>
+
+              <div className={s.schoice}>
+                  <Checkbox className={s.catalogCheck}/>
+                  <p className={s.checkText}>SeaDoo Spark 90 </p>
+              </div>
+
+              <div className={s.schoice}>
+                  <Checkbox className={s.catalogCheck}/>
+                  <p className={s.checkText}>SeaDoo GTR 230</p>
+              </div>                   
+
+          </div>
+          <NavLink className={s.linkMore} to="">Показать еще</NavLink>
+
+          </Typography>
+      </AccordionDetails>
+    </Accordion>
 
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
@@ -249,8 +248,7 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <div className={s.counterWrap}>
-            
+          <div className={s.counterWrap}>            
             <div className={s.schoice}>
                 <Checkbox className={s.catalogCheck}/>
                 <p className={s.checkText}>Россия</p>
@@ -270,14 +268,13 @@ export default function FilterBlock() {
                 <Checkbox className={s.catalogCheck}/>
                 <p className={s.checkText}>CША</p>
             </div>
-           
+
         </div>   
-        <NavLink className={s.linkMore} to="">Показать еще</NavLink>
-        {/* <a  className={s.linkMore} href="">Показать еще</a> */}
-          </Typography>
+        <NavLink className={s.linkMore} to="">Показать еще</NavLink>      
+        </Typography>
         </AccordionDetails>
       </Accordion>
     </div>
-   
+  
   );
 }

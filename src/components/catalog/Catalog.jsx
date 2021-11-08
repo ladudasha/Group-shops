@@ -35,7 +35,7 @@ import * as React from 'react';
 
 function Catalog(props) {
 
-   
+
 
     const catalogdata1 = {
         title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
