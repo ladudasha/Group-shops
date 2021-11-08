@@ -199,8 +199,8 @@ export default function FilterBlock() {
         </AccordionSummary>
         <AccordionDetails>
         <Typography>
-          <div className={s.modelChois}>
-            <input  type="text" placeholder="Введите модель" />
+          <div className={s.modelChoiseWrapper}>
+            <input className={s.modelChoise}  type="text" placeholder="Введите модель" />
           </div>
 
           <div className={s.modelWrap}>
