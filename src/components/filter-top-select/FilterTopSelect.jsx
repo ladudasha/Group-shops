@@ -40,7 +40,7 @@ export default function SelectLabels(props) {
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 178,}}>
-      {/* <InputLabel className={s.selectLabel}>По полулярности</InputLabel> */}
+     
         <Select
           
           value={age}
@@ -53,10 +53,7 @@ export default function SelectLabels(props) {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6 0L6 4.6L1.4 0L0 1.4L6 7.4L12 1.4L10.6 0Z" fill="#D7D9DF"/>
 </svg>)}
         >
-          <MenuItem value="">
-            По популярности
-          </MenuItem>
-          {/* <MenuItem value={10}>По популярности</MenuItem> */}
+          <MenuItem value="">По популярности</MenuItem>         
           <MenuItem value={20}>По цене с min</MenuItem>
           <MenuItem value={30}>По цене с max</MenuItem>
           <MenuItem value={40}>По рейтингу</MenuItem>

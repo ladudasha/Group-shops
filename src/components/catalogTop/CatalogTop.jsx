@@ -44,7 +44,7 @@ function CatalogTop(props) {
                     <div className={s.groupRight}>
                            
                             <FilterTopSelect/>
-                            {/* <MySelect/> */}
+                          
                             <div className={s.btnBlock}>
                                 <button className={s.btnRight}><img src={icon1} alt="" /></button>
                                 <button className={s.btnRight}><img src={icon2} alt="" /></button>
