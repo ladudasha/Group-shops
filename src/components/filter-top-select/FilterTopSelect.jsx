@@ -40,7 +40,6 @@ export default function SelectLabels(props) {
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 178,}}>
-      {/* <InputLabel className={s.selectLabel}>По полулярности</InputLabel> */}
         <Select
           
           value={age}
