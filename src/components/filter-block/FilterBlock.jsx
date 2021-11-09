@@ -11,6 +11,9 @@ import PriceSelect from "./price-select/PriceSelect"
 import Checkbox from '@mui/material/Checkbox';
 import FilterButtons from '../filter-buttons/FilterButtons';
 
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
 
 
 import CatalogPolzunok from '../catalog-polzunok/CatalogPolzunok';
@@ -274,6 +277,27 @@ export default function FilterBlock() {
         </Typography>
         </AccordionDetails>
       </Accordion>
+
+      
+      <div className={s.filterBottom}>
+          <button className={s.filterBottomBtn}>ВЫБРАТЬ</button>
+          <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+            <Typography classname={s.filterBottomMoreInfo}>Дополнительные параметры</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                ....
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <a className={s.filterBottomMoreLink}>Сбросить фильтр</a>
+      </div>
+      
     </div>
   
   );

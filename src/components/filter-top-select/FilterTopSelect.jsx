@@ -21,10 +21,10 @@ export default function SelectLabels(props) {
           fontSize: 14,
           color:'#2F3035',
           borderRadius:0,
-          paddingLeft: 15,
+          // paddingLeft: 15,
           border: '1px solid #D7D9DF',
           '& .MuiSelect-icon': {
-            right: 15,
+            right: 17,
             top: 11,
           },
           '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
@@ -48,14 +48,12 @@ export default function SelectLabels(props) {
           displayEmpty
           autoWidth
           className={classes.root}
-          // inputProps={{ 'aria-label': 'Without label' }}
-          IconComponent={props => (<svg {...props} width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6 0L6 4.6L1.4 0L0 1.4L6 7.4L12 1.4L10.6 0Z" fill="#D7D9DF"/>
-</svg>)}
+          IconComponent={props => (<svg {...props} 
+          width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6 0L6 4.6L1.4 0L0 1.4L6 7.4L12 1.4L10.6 0Z" fill="#D7D9DF"/>
+          </svg>)}
         >
-          <MenuItem value="">
-            По популярности
-          </MenuItem>
+          <MenuItem value="">По популярности</MenuItem>
           {/* <MenuItem value={10}>По популярности</MenuItem> */}
           <MenuItem value={20}>По цене с min</MenuItem>
           <MenuItem value={30}>По цене с max</MenuItem>
