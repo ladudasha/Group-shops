@@ -13,14 +13,8 @@ import FilterButtons from '../filter-buttons/FilterButtons';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
-
-
 import CatalogPolzunok from '../catalog-polzunok/CatalogPolzunok';
 import { NavLink } from 'react-router-dom';
-
-
-
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -58,6 +52,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function FilterBlock() {
+  
   const data1 = {
     title:"Мощность, л.с.",
     value1:90,

@@ -32,13 +32,14 @@ const otherProductsCardData = {
 
 }
 
-export default function ProductDescription() {
+export default function ProductDescription(props) {
     return (
         <div className={s.productDescription}>
             <div className={s.container}>
                 <div className={s.infoContent}>
                     <section className={s.infoProduct}></section>
-                    <section className={s.infoTable}>
+                    <section className={s.infoTable}>                       
+                                         
                         <TableTop/>
                     </section>
                     <section className={s.infoSlider}>

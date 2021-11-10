@@ -6,18 +6,17 @@ import RadioButtonMain from "../radioButtonMain/RadioButtonMain";
 
 export default function TableTop() {
     return (
-    <div className={s.tableTop}>
-        <div className={s.list}></div>
-        <div className={s.wrap}>
-            <div className={s.leftBlock}></div>
-            <div className={s.rightBlock}>
-                <div>
-<RadioButtonMain/>
-                </div>
-                <div></div>
+    <div className={s.tableTop}>       
+        
+            <div className={s.leftBlock}>
+                <p className={s.tableTopText}>Магазин</p>
+                <input type="text" />
+            </div>
+
+            <div className={s.rightBlock}>                
+                <RadioButtonMain/>                    
             </div>
         </div>
 
-    </div>
 );
 }
