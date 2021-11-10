@@ -51,6 +51,42 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   
 }));
 
+
+const BottomAccordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+
+}));
+
+const BottomAccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+    {...props}
+    
+  />
+))(({ theme }) => ({
+
+  
+  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+    transform: 'rotate(270deg)',
+    
+  },
+  '& .MuiAccordionSummary-content': {
+    marginLeft: theme.spacing(1),
+  },
+  '&.Mui-focused hover': {
+    borderColor: '#007AFF'
+  },
+}));
+
+
+
+const BottomAccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(1),
+  
+  
+}));
+
 export default function FilterBlock() {
   
   const data1 = {
@@ -276,20 +312,20 @@ export default function FilterBlock() {
       
       <div className={s.filterBottom}>
           <button className={s.filterBottomBtn}>ВЫБРАТЬ</button>
-          <Accordion>
-              <AccordionSummary
+          <BottomAccordion>
+              <BottomAccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
             <Typography classname={s.filterBottomMoreInfo}>Дополнительные параметры</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+            </BottomAccordionSummary>
+            <BottomAccordionDetails>
               <Typography>
                 ....
               </Typography>
-            </AccordionDetails>
-          </Accordion>
+            </BottomAccordionDetails>
+          </BottomAccordion>
           <a className={s.filterBottomMoreLink}>Сбросить фильтр</a>
       </div>
       

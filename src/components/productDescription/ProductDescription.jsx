@@ -5,6 +5,7 @@ import img333 from "./../../assets/images/WithProducts/img3.png";
 import img444 from "./../../assets/images/WithProducts/img4.png";
 import ProductsItemsBlock from "../Products-Items-Block/ProductsItemsBlock";
 import TableTop from "../tableTop/TableTop";
+import InfoProduct from './../info-product/InfoProduct.jsx';
 
 
 
@@ -38,8 +39,11 @@ export default function ProductDescription(props) {
             <div className={s.container}>
                 <div className={s.infoContent}>
                     <section className={s.infoProduct}></section>
-                    <section className={s.infoTable}>                       
-                                         
+                    <div className={s.infoTable}></div>                 
+                    <section className={s.infoProduct}>
+                        <InfoProduct/>
+                    </section>
+                    <section className={s.infoTable}>
                         <TableTop/>
                     </section>
                     <section className={s.infoSlider}>
