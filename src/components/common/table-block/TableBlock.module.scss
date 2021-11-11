@@ -1,0 +1,31 @@
+.workingHours{
+    display: grid;
+    grid-template-columns: 67px 90px;
+    grid-template-rows: 29px 21px;
+
+}
+.text{
+    display: flex;
+}
+.button{
+    width: 140px;
+    height: 35px;
+    color: white;
+    background-color:#1C62CD;
+    text-align: center;
+}
+.head{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #2F3035;
+}
+.body{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #2F3035;
+    opacity: 0.7;
+}
