@@ -25,11 +25,11 @@ export default function TableBlock() {
             <Table sx={{ maxWidth: 1134 }} aria-label="simple table">
                 <TableHead className={s.head}>
                     <TableRow>
-                        <TableCell style={{borderBottom:"none"}}>Адрес</TableCell>
-                        <TableCell style={{borderBottom:"none"}} align="left">Режим работы</TableCell>
-                        <TableCell style={{borderBottom:"none"}} align="left">Доступно</TableCell>
-                        <TableCell style={{borderBottom:"none"}} align="left">Количество</TableCell>
-                        <TableCell style={{borderBottom:"none"}} align="left"></TableCell>
+                        <TableCell style={{borderBottom:"none", borderTop:"none"}}>Адрес</TableCell>
+                        <TableCell style={{borderBottom:"none", borderTop:"none"}} align="left">Режим работы</TableCell>
+                        <TableCell style={{borderBottom:"none", borderTop:"none"}} align="left">Доступно</TableCell>
+                        <TableCell style={{borderBottom:"none", borderTop:"none"}} align="left">Количество</TableCell>
+                        <TableCell style={{borderBottom:"none", borderTop:"none"}} align="left"></TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody className={s.body}>
