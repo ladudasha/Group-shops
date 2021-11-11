@@ -8,6 +8,7 @@ import TableTop from "../tableTop/TableTop";
 import InfoProduct from './../info-product/InfoProduct.jsx';
 import TableBlock from "../common/table-block/TableBlock";
 import DenseTable from "../common/table-block/TableBlock";
+import NavItemDescription from "../navItemDesctiption/NavItemDescription";
 
 
 
@@ -41,16 +42,25 @@ export default function ProductDescription(props) {
             <div className={s.container}>
                 <div className={s.infoContent}>
                 
-                    <section className={s.infoProduct}></section>
-                    <div className={s.infoTable}></div>                 
+                    <section className={s.infoProduct}>
+                        <NavItemDescription/>
+                        <TableTop/>
+                    </section>
+
                     <section className={s.infoProduct}>
                         <InfoProduct/>
                     </section>
-                    
+
+
                     <section className={s.infoTable}>
-                        <TableTop/>
+                        
                         <TableBlock/>
                     </section>
+
+                   
+                   
+
+                   
                     
                     <section className={s.infoSlider}>
                         <ProductsItemsBlock cardData={otherProductsCardData} style={{display:"none"}}/>                    
