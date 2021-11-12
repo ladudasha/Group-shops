@@ -1,34 +1,34 @@
 import Item from "../common/header/Item/Item";
-import s from "./NavItemDescription.module.scss";
+import s from "./NavAboutProduct.module.scss";
 
 
 
-function NavItemDescription(props) {
+function NavAboutProduct(props) {
     
     const dataItem1={
-        title: "Квадроциклы"
+        title: "О товаре"
     }
     const dataItem2={
-        title: "Катера"
+        title: "Характеристики"
     }
     const dataItem3={
-        title: "Гидроциклы"
+        title: "Отзывы"
     }
     const dataItem4={
-        title: "Лодки"
+        title: "Самовывоз"
     }
     const dataItem5={
-        title: "Вездеходы"
+        title: "Доставка"
     }
     const dataItem6={
-        title: "Снегоходы"
+        title: "Cервис"
     }
     const dataItem7={
-        title: "Двигатели"
+        title: "Гарантия"
     }
     
     return ( 
-        <div className={s.navItemDescription}>            
+        <div className={s.navAboutProduct}>            
                 <Item title={dataItem1.title}/>
                 <Item title={dataItem2.title}/>
                 <Item title={dataItem3.title}/>
@@ -40,4 +40,4 @@ function NavItemDescription(props) {
     );
 }
 
-export default NavItemDescription;
+export default NavAboutProduct;
