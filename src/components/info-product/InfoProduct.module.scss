@@ -1,6 +1,7 @@
 .infoProductBlock{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .leftBlock{
@@ -8,12 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:1px solid rgb(223, 164, 164);
+    // border:1px solid rgb(223, 164, 164);
 }
 
 .rightBlock{
     max-width: 570px;
-    border:1px solid rgb(212, 238, 65);
+    // border:1px solid rgb(212, 238, 65);
+    display: flex;
+    flex-direction: column;
 }
 
 .saleLabel{
@@ -76,6 +79,14 @@
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
+    margin-bottom: 8px;
+}
+
+.infoProductLeftLink{
+    font-family: 'SFProDisplayRegular';
+    font-weight: 400;
+    font-size: 15px;
+    color:#1C62CD;
 }
 
 .title{
@@ -108,6 +119,7 @@
 .specifications{
     display: grid;
     grid-template-columns: 281px 125px;
+    margin-bottom: 20px;
 }
 .specificationRow{
     // max-width: 436px;
@@ -120,7 +132,31 @@
     display: flex;
     align-items:flex-end;
 }
-.specificationName{
-   
+
+.infoProductMoreLink{
+    color:#1C62CD;
+    font-family: 'SFProDisplayRegular';
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration-line:underline;
+    -moz-text-decoration-line:underline;
+    margin-bottom: 45px;
 }
-.specificationValue{}
+
+.infoProductBtn{
+    font-family: 'SFProDisplayRegular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color:#fff;
+    width: 177px;
+    height: 50px;
+    background-color:#1C62CD;
+    border:none;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
