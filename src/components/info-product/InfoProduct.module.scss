@@ -16,6 +16,111 @@
     border:1px solid rgb(212, 238, 65);
 }
 
+.saleLabel{
+    display: block;
+    width: 94px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #1C62CD;
+    color: #fff;
+    font-family: 'SFProDisplayRegular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.wrapImage{}
+
+.infoProductImg{
+    width: 100%;
+}
+
+.oldPrace{
+    color: #000;
+    font-family: 'Barlow', serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    opacity: 0.6;
+    position: relative;
+}
+
+.oldPrace::before{
+    content: "";
+    display: block;
+    width: 132px;
+    height: 1px;
+    background-color:#2F3035;
+    position: absolute;
+    top: 19px;
+    left: 6px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    margin-bottom: 12px;
+}
+
+.newPrace{
+    color: #2F3035;
+    font-family: 'Barlow', serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.title{
+    max-width: 570px;
+    font-family: 'SFProDisplayBold';
+    font-weight: 600;
+    font-size: 30px;
+    color:#2F3035;
+    margin-bottom: 10px;
+}
+
+.productСode{
+    color:#2F3035;
+    font-family: 'SFProDisplayRegular';
+    font-weight: 400;
+    font-size: 15px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
 .infoProductLike{
     display: flex;
+    align-items: baseline;
 }
+
+.infoProductLike:first-child{
+    margin-right: 19px;
+}
+
+.specifications{
+    display: grid;
+    grid-template-columns: 281px 125px;
+}
+.specificationRow{
+    // max-width: 436px;
+    height: 45px;
+    border-bottom: 1px solid rgba(047,048,053, .1);
+    color:#2F3035;
+    font-family: 'SFProDisplayRegular';
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items:flex-end;
+}
+.specificationName{
+   
+}
+.specificationValue{}
