@@ -18,6 +18,13 @@ import img40 from './../../assets/images/catalogImages/img40.png';
 import img41 from './../../assets/images/catalogImages/img41.png';
 import img42 from './../../assets/images/catalogImages/img42.png';
 
+
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+
+
+
 import CatalogLeft from "../catalog-left/CatalogLeft";
 import CatalogProductsCards from './catalog products cards/CatalogProductsCards';
 
@@ -124,7 +131,22 @@ function Catalog(props) {
     return ( 
         <div className={s.catalog}>
             <div className={s.container}>
-            <BasicBreadcrumbs/> 
+
+            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+                <Link underline="hover" color="inherit" href="/">
+                    Главная
+                </Link>
+                <Link
+                underline="hover"
+                color="text.primary"
+                href="/components/breadcrumbs/"
+                aria-current="page"
+                >
+                Гидроциклы
+                </Link>
+        </Breadcrumbs>
+        
+            {/* <BasicBreadcrumbs/>  */}
                 <div className={s.catalogContent}>
                     <div className={s.topTitle}>
                         <CatalogTop/>

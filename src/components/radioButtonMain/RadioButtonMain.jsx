@@ -6,17 +6,17 @@ import FormControl from '@mui/material/FormControl';
 import { styled } from '@mui/material/styles';
 
 
-// стилизация значка в не нажатом состоянии!
+// стилизация значка в ненажатом состоянии!
 
 const BpIcon = styled('span')(({ theme }) => ({
- 
+
   width: 8,
   height: 8,
   marginRight: 15, 
   outline: '2px auto #C4C4C4',
   outlineOffset: 3,
   
- 
+
 }));
 
 // стилизация значка в нажатом состоянии!

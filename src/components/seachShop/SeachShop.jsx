@@ -1,16 +1,16 @@
-import s from "./TableTop.module.scss"
+import s from "./SeachShop.module.scss"
 import RadioButtonMain from "../radioButtonMain/RadioButtonMain";
 
 
 
 
-export default function TableTop() {
+export default function SeachShop() {
     return (
-    <div className={s.tableTop}>       
+    <div className={s.seachShop}>       
         
             <div className={s.leftBlock}>
                 <p className={s.tableTopText}>Магазин</p>
-                <input type="text" />
+                <input className={s.seach} type="text" />
             </div>
 
             <div className={s.rightBlock}>                
