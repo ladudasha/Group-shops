@@ -12,6 +12,7 @@ import GidroRating from '../gidroRating/gidroRating';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { makeStyles } from '@material-ui/core/styles';
 
 
 function InfoProduct(props) {
@@ -21,6 +22,38 @@ function InfoProduct(props) {
     const handleChange = (event, newValue) => {
       setValue(newValue);
     }
+
+
+
+
+    const myTabs = makeStyles((theme) =>({
+        root: {
+            '& .MuiTab-root':{
+                
+                fontFamily:'SFProDisplayRegular',
+                fontSize: 20,
+                fontWeight:400,
+                textTransform:'capitalize',
+                paddingLeft:'none',
+                opacity: 0.6,
+            },
+            '& .Mui-selected': {
+                fontFamily:'SFProDisplayBold',
+                fontWeight:600,
+                fontSize: 20,
+                textTransform:'capitalize',
+                color:'#2F3035',
+                paddingLeft:'none',
+                opacity: 1,
+            }
+        },
+    }),
+    );
+      const classes = myTabs();
+
+
+
+
     return ( 
         <div className={s.infoProduct}>
             <div className={s.infoProductBlock}>
@@ -44,14 +77,17 @@ function InfoProduct(props) {
                     </div>
                     <div className={s.infoProductLike}>
                             <Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />}/>
-                            <img src={Icon} alt="" />
+                            <img className={s.compareProduct} src={Icon} alt="" />
                             <GidroRating/>
                     </div>
 
                     <div>
-                        <Tabs value={value} onChange={handleChange} aria-label="disabled tabs example">
+                        <Tabs 
+                        value={value} 
+                        onChange={handleChange} 
+                        className={classes.root}>
                             <Tab label="Характеристика" />
-                            <Tab label="Наличие в магазине" disabled />
+                            <Tab label="Наличие в магазине" />
                         </Tabs>
                     </div>
                     <div className={s.specifications}>

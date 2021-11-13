@@ -10,6 +10,7 @@
     grid-template-columns: 301px 1fr;
     grid-template-rows: 200px 1fr 200px;
     grid-template-areas: 'title title' 'sidebar catalog' 'sidebar pagination';
+    margin-top: 40px;
 }
 
 .topTitle {

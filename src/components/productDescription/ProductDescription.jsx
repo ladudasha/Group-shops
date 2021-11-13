@@ -53,8 +53,6 @@ const productInfo1 = {
     power: 155,
     engineType:"Бензиновый",
     yearOfIssue: 2018,
-    // img: img31,
-    // cash: "1 049 500 ₽" ,           
 }
 
 export default function ProductDescription(props) {

@@ -1,6 +1,7 @@
 .infoProductBlock{
     display: flex;
     justify-content: space-between;
+    margin-top: 44px;
     margin-bottom: 80px;
     
 }
@@ -105,16 +106,18 @@
     font-weight: 400;
     font-size: 15px;
     opacity: 0.6;
+    padding-right: 7px;
     margin-bottom: 20px;
 }
 
 .infoProductLike{
     display: flex;
     align-items: baseline;
+    margin-bottom: 20px;
 }
 
-.infoProductLike:first-child{
-    margin-right: 19px;
+.compareProduct {
+    margin:0 19px;
 }
 
 .specifications{
