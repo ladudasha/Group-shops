@@ -14,6 +14,8 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import imgBig from "./../../assets/images/catalogImages/img32bigger.png";
+
 
 
 const otherProductsCardData = {
@@ -40,6 +42,19 @@ const otherProductsCardData = {
 
 }
 
+const productInfo1 = {
+    img: imgBig,
+    oldPrace:"1 200 475 ₽",
+    newPrace:"1 100 475 ₽",
+    title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
+    code: "366666-2",
+    manufacturerCountry: "Канада",
+    numberOfSeats: 3,
+    power: 155,
+    engineType:"Бензиновый",
+    yearOfIssue: 2018,
+}
+
 export default function ProductDescription(props) {
     return (
         <div className={s.productDescription}>
@@ -61,7 +76,17 @@ export default function ProductDescription(props) {
                 
 
                     <section className={s.infoProduct}>
-                        <InfoProduct/>
+                        <InfoProduct
+                        img={productInfo1.img}
+                        oldPrace={productInfo1.oldPrace}
+                        newPrace={productInfo1.newPrace} 
+                        title={productInfo1.title} 
+                        code={productInfo1.code} 
+                        manufacturerCountry={productInfo1.manufacturerCountry}
+                        numberOfSeats={productInfo1.numberOfSeats}
+                        power={productInfo1.power}
+                        engineType={productInfo1.engineType}
+                        yearOfIssue={productInfo1.yearOfIssue}/>
                     </section>
 
                     

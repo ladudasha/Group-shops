@@ -1,7 +1,7 @@
 import s from './InfoProduct.module.scss';
 import * as React from 'react';
 import { NavLink } from "react-router-dom";
-import img from './../../assets/images/catalogImages/img32bigger.png';
+// import img from './../../assets/images/catalogImages/img32bigger.png';
 
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
@@ -12,6 +12,7 @@ import GidroRating from '../gidroRating/gidroRating';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { makeStyles } from '@material-ui/core/styles';
 
 
 function InfoProduct(props) {
@@ -21,35 +22,72 @@ function InfoProduct(props) {
     const handleChange = (event, newValue) => {
       setValue(newValue);
     }
+
+
+
+
+    const myTabs = makeStyles((theme) =>({
+        root: {
+            '& .MuiTab-root':{
+                
+                fontFamily:'SFProDisplayRegular',
+                fontSize: 20,
+                fontWeight:400,
+                textTransform:'capitalize',
+                paddingLeft:'none',
+                opacity: 0.6,
+            },
+            '& .Mui-selected': {
+                fontFamily:'SFProDisplayBold',
+                fontWeight:600,
+                fontSize: 20,
+                textTransform:'capitalize',
+                color:'#2F3035',
+                paddingLeft:'none',
+                opacity: 1,
+            }
+        },
+    }),
+    );
+      const classes = myTabs();
+
+
+
+
     return ( 
         <div className={s.infoProduct}>
             <div className={s.infoProductBlock}>
+
                 <div className={s.leftBlock}> 
                     <span className={s.saleLabel}>SALE</span>
                     <div className={s.wrapImage}>
-                        <img className={s.infoProductImg} src={img} alt="" />
+                        <img className={s.infoProductImg} src={props.img} alt="" />
                     </div>
-                   
-                    <span className={s.oldPrace} >1 200 475 ₽</span>
-                    <span className={s.newPrace}>1 100 475 ₽</span>
-                    {/* <NavLink className={s.moreInfoText} to={props.link}>Нашли дешевле? Снизим цену!</NavLink>  */}
+                    <span className={s.oldPrace} >{props.oldPrace}</span>
+                    <span className={s.newPrace}>{props.newPrace}</span>
+                    <a className={s.infoProductLeftLink}>Нашли дешевле? Снизим цену!</a>
                 </div>
+
                 <div className={s.rightBlock}>
-                    <h2 className={s.title}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h2>
-                    <span className={s.productСode}>Код товара:</span>
-                    <span className={s.productСode}>366666-2</span>
-                    <div>
-                        <div className={s.infoProductLike}>
-                            <Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />}/>
-                            <img src={Icon} alt="" />
-                            <GidroRating/>
-                        </div>
-                        
+                    <h2 className={s.title}>{props.title}</h2>
+                    
+                    <div>    
+                        <span className={s.productСode}>Код товара:</span>
+                        <span className={s.productСode}>{props.code}</span>  
                     </div>
+                    <div className={s.infoProductLike}>
+                            <Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />}/>
+                            <img className={s.compareProduct} src={Icon} alt="" />
+                            <GidroRating/>
+                    </div>
+
                     <div>
-                        <Tabs value={value} onChange={handleChange} aria-label="disabled tabs example">
+                        <Tabs 
+                        value={value} 
+                        onChange={handleChange} 
+                        className={classes.root}>
                             <Tab label="Характеристика" />
-                            <Tab label="Наличие в магазине" disabled />
+                            <Tab label="Наличие в магазине" />
                         </Tabs>
                     </div>
                     <div className={s.specifications}>
@@ -57,45 +95,46 @@ function InfoProduct(props) {
                             <span className={s.specificationName}>Производитель</span>
                         </div>
                         <div className={s.specificationRow}>
-                            <span className={s.specificationValue}>Канада</span>
+                            <span className={s.specificationValue}>{props.manufacturerCountry}</span>
                         </div>
                         
                         <div  className={s.specificationRow}>
                             <span className={s.specificationName}>Количество мест, шт: </span>
                         </div>
                         <div  className={s.specificationRow}>
-                        <span className={s.specificationValue}>3</span>
+                        <span className={s.specificationValue}>{props.numberOfSeats}</span>
                         </div>
 
                         <div  className={s.specificationRow}>
                             <span className={s.specificationName}>Мощность, л.с.</span>
                         </div>
                         <div  className={s.specificationRow}>
-                            <span className={s.specificationValue}>155</span>
+                            <span className={s.specificationValue}>{props.power}</span>
                         </div>
 
                         <div  className={s.specificationRow}>
                             <span className={s.specificationName}>Тип двигателя</span>
                         </div>
                         <div  className={s.specificationRow}>
-                            <span className={s.specificationValue}>Бензиновый</span>
+                            <span className={s.specificationValue}>{props.engineType}</span>
                         </div>
                         
                         <div  className={s.specificationRow}>
                             <span className={s.specificationName}>Год выпуска</span>
                         </div>
                         <div  className={s.specificationRow}>
-                            <span className={s.specificationValue}>2018</span>
+                            <span className={s.specificationValue}>{props.yearOfIssue}</span>
                         </div>
                         
 
                     </div>
+                    <a className={s.infoProductMoreLink}>Показать еще</a>
+                    <button className={s.infoProductBtn}>купить</button>
+                    
                 </div>
 
-            </div>
-            
+            </div> 
         </div>
-    
     );
 }
 
