@@ -27,4 +27,11 @@
     background: #F0F0F4;
     border-radius: 3px;
     border: none;
+    position: relative;
+}
+
+.seach::after {
+    content: "";
+    position: absolute;
+    background-image: url(./../../assets/images/);
 }

@@ -46,7 +46,7 @@ export default function ProductDescription(props) {
             <div className={s.container}>
                 <div className={s.infoContent}>
 
-                <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+                <Breadcrumbs style={{marginRight: '30'}} separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
                         <Link underline="hover" color="inherit" href="/">
                             Главная
                         </Link>
