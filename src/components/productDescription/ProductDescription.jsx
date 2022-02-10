@@ -61,18 +61,17 @@ export default function ProductDescription(props) {
             <div className={s.container}>
                 <div className={s.infoContent}>
 
-                <Breadcrumbs style={{marginRight: '30'}} separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
-                        <Link underline="hover" color="inherit" href="/">
-                            Главная
-                        </Link>
-                        <Link underline="hover" color="inherit" href="/">
-                            Гидроциклы
-                        </Link>
-                        <Link underline="hover" color="inherit" href="/">
-                        Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
-                        </Link>
-                        
-        </Breadcrumbs>
+                    <Breadcrumbs  separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+                            <Link underline="hover" color="inherit" href="/">
+                                Главная
+                            </Link>
+                            <Link underline="hover" color="inherit" href="/">
+                                Гидроциклы
+                            </Link>
+                            <Link underline="hover" color="inherit" href="/">
+                            Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+                            </Link>                            
+                    </Breadcrumbs>
                 
 
                     <section className={s.infoProduct}>

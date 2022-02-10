@@ -14,7 +14,6 @@ function SectionProduct(props) {
                 <div className={s.imgWrap}>
                     <img src={props.img} alt="" />
                 </div>
-               
             </article>
 
         

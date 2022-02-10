@@ -28,10 +28,17 @@
     border-radius: 3px;
     border: none;
     position: relative;
+    background-image: url(./../../assets/images/search/Search.svg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
-.seach::after {
-    content: "";
-    position: absolute;
-    background-image: url(./../../assets/images/);
-}
+// .seach::after {
+//     content: "";
+//     position: absolute;
+//     background-image: url(./../../assets/images/search/Search.svg);
+//     width: 12px;
+//     height: 16px;
+//     top: 0;
+//     left: 0;
+// }

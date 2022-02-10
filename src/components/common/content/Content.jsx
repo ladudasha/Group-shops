@@ -1,19 +1,14 @@
+import React from 'react';
 import s from "./Content.module.scss";
-import Main from "./../../main/Main";
-import Catalog from "./../../catalog/Catalog";
-import ProductDescription from "./../../productDescription/ProductDescription";
+import Routers from "../../Routers";
 
 
 
 function Content(props) {
     
-
-
     return ( 
         <div className={s.contentInfo}>
-            <Main/>
-            <Catalog/>
-            <ProductDescription/>
+            <Routers/>
         </div>
     );
 }

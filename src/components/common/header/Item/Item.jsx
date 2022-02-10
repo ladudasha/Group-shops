@@ -1,3 +1,5 @@
+import { PATH } from "../../../Routers";
+import {NavLink} from "react-router-dom";
 import s from "./Item.module.scss";
 
 
@@ -6,7 +8,7 @@ function Item(props) {
     
     return ( 
         <div className={s.Item}>
-            <a className={s.ItemLink} href="#">{props.title}</a>
+            <NavLink to={PATH.CATALOG} className={s.ItemLink}>{props.title}</NavLink>
         </div>
     );
 }

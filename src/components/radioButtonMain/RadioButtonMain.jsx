@@ -46,7 +46,7 @@ function BpRadio(props) {
 export default function RadioButtonMain() {
   return (
     <FormControl component="fieldset">
-     
+    
       <RadioGroup row aria-label="gender" name="row-radio-buttons-group">
         <FormControlLabel style={{marginRight:55}}value="female" control={<BpRadio/>} label="Забрать сегодня" />
         <FormControlLabel value="male" control={<BpRadio/>} label="Забрать в течение недели" />       

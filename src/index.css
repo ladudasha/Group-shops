@@ -31,24 +31,6 @@ code {
 }
 
 
-/* @font-face {
-    font-family: 'BarlowBold';
-    src: local('BarlowBold'), url(./fonts/Barlow/Barlow-Bold.woff) format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'BarlowRegular';
-    src: local('BarlowRegular'), url(./fonts/Barlow/Barlow-Regular.woff) format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'BarlowSemiBold';
-    src: local('BarlowSemiBold'), url(./fonts/Barlow/Barlow-SemiBold.woff) format('woff');
-    font-display: swap;
-} */
-
 @font-face {
     font-family: 'SFProDisplayRegular';
     src: local('SFProDisplayRegular'), url(./fonts/SFProDisplay/SFProDisplay-Regular.woff) format('woff');
