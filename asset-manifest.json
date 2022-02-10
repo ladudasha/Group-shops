@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Group-shops/static/css/main.10821288.chunk.css",
-    "main.js": "/Group-shops/static/js/main.d23fe17c.chunk.js",
-    "main.js.map": "/Group-shops/static/js/main.d23fe17c.chunk.js.map",
-    "runtime-main.js": "/Group-shops/static/js/runtime-main.ba44740c.js",
-    "runtime-main.js.map": "/Group-shops/static/js/runtime-main.ba44740c.js.map",
+    "main.css": "/Group-shops/static/css/main.2cd62a2e.chunk.css",
+    "main.js": "/Group-shops/static/js/main.beb438e6.chunk.js",
+    "main.js.map": "/Group-shops/static/js/main.beb438e6.chunk.js.map",
+    "runtime-main.js": "/Group-shops/static/js/runtime-main.bb1e14e2.js",
+    "runtime-main.js.map": "/Group-shops/static/js/runtime-main.bb1e14e2.js.map",
     "static/css/2.ee779822.chunk.css": "/Group-shops/static/css/2.ee779822.chunk.css",
-    "static/js/2.ec19bc9a.chunk.js": "/Group-shops/static/js/2.ec19bc9a.chunk.js",
-    "static/js/2.ec19bc9a.chunk.js.map": "/Group-shops/static/js/2.ec19bc9a.chunk.js.map",
-    "static/js/3.ecab4832.chunk.js": "/Group-shops/static/js/3.ecab4832.chunk.js",
-    "static/js/3.ecab4832.chunk.js.map": "/Group-shops/static/js/3.ecab4832.chunk.js.map",
+    "static/js/2.154cf001.chunk.js": "/Group-shops/static/js/2.154cf001.chunk.js",
+    "static/js/2.154cf001.chunk.js.map": "/Group-shops/static/js/2.154cf001.chunk.js.map",
+    "static/js/3.38481fcd.chunk.js": "/Group-shops/static/js/3.38481fcd.chunk.js",
+    "static/js/3.38481fcd.chunk.js.map": "/Group-shops/static/js/3.38481fcd.chunk.js.map",
     "index.html": "/Group-shops/index.html",
     "static/css/2.ee779822.chunk.css.map": "/Group-shops/static/css/2.ee779822.chunk.css.map",
-    "static/css/main.10821288.chunk.css.map": "/Group-shops/static/css/main.10821288.chunk.css.map",
-    "static/js/2.ec19bc9a.chunk.js.LICENSE.txt": "/Group-shops/static/js/2.ec19bc9a.chunk.js.LICENSE.txt",
+    "static/css/main.2cd62a2e.chunk.css.map": "/Group-shops/static/css/main.2cd62a2e.chunk.css.map",
+    "static/js/2.154cf001.chunk.js.LICENSE.txt": "/Group-shops/static/js/2.154cf001.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Group-shops/static/media/SFProDisplay-Semibold.340c3a1a.woff",
     "static/media/SeachShop.module.scss": "/Group-shops/static/media/Search.9728b0de.svg",
     "static/media/SectionSale1.b3633e09.png": "/Group-shops/static/media/SectionSale1.b3633e09.png",
@@ -65,10 +65,10 @@
     "static/media/youtube.50dd7114.svg": "/Group-shops/static/media/youtube.50dd7114.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba44740c.js",
+    "static/js/runtime-main.bb1e14e2.js",
     "static/css/2.ee779822.chunk.css",
-    "static/js/2.ec19bc9a.chunk.js",
-    "static/css/main.10821288.chunk.css",
-    "static/js/main.d23fe17c.chunk.js"
+    "static/js/2.154cf001.chunk.js",
+    "static/css/main.2cd62a2e.chunk.css",
+    "static/js/main.beb438e6.chunk.js"
   ]
 }
