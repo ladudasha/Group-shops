@@ -5,7 +5,7 @@ import ProductDescription from './productDescription/ProductDescription';
 import {
     Routes,
     Route
-  } from "react-router-dom";
+} from "react-router-dom";
 
 
 export const PATH = {
