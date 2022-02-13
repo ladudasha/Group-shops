@@ -1,6 +1,6 @@
 import './App.css';
 import './index.css';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Header from './components/common/header/Header.jsx';
 import Content from './components/common/content/Content.jsx';
 import Footer from './components/common/footer/Footer.jsx';
@@ -16,13 +16,13 @@ import Routers from './components/Routers'
 function App() {
 
     return ( 
-    <BrowserRouter >
+    <HashRouter >
         <div className = "wrapperGreat" >
         <Header/>
         <Content className = "contentBlock"/>
         <Footer/>
         </div> 
-    </BrowserRouter>
+    </HashRouter>
     );
 }
 

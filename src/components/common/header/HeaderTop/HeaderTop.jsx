@@ -5,6 +5,9 @@ import like from "./../../../../assets/images/mainImages/Header/like.svg";
 import profile from "./../../../../assets/images/mainImages/Header/profile.svg";
 import basket from "./../../../../assets/images/mainImages/Header/basket.svg";
 
+import {NavLink} from "react-router-dom";
+import { PATH } from "../../../Routers";
+
 
 
 function HeaderTop() {
@@ -18,7 +21,8 @@ function HeaderTop() {
             </nav>
             </div>
             <div className={s.logoWrapper}>
-            <img className={s.logo} src={logo} alt="Logo" />
+                <NavLink to={PATH.MainPage}><img className={s.logo} src={logo} alt="Logo" /></NavLink>
+            
             </div>
             <div className={s.addressWrapper}>
                 <img className={s.geo} src={geo} alt="Geo" />

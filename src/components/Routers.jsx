@@ -10,7 +10,8 @@ import {
 
 export const PATH = {
     CATALOG: '/catalog',
-    ProductDescription: '/productDescription'
+    ProductDescription: '/productDescription',
+    MainPage: '/Main'
 }
 
 
@@ -22,6 +23,7 @@ function Routers() {
                     <Route path={'/'} element={<Main/>} />
                     <Route path={PATH.CATALOG} element={<Catalog/>} />
                     <Route path={PATH.ProductDescription} element={<ProductDescription/>} />
+                    <Route path={PATH.MainPage} element={<Main/>} />
                 </Routes>
         </>
     )
